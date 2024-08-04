@@ -11,7 +11,7 @@ module.exports = {
       colors:{
       bluefc:'#020d73',
       purplefc:'#240048',
-      cyanfc:'00689b'
+      cyanfc:'#00689b',
     }},
   },
   plugins: [],
