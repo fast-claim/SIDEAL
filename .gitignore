@@ -1,5 +1,0 @@
-# Ignorar todos los archivos .min.js
-*.min.js
-
-# Ignorar la carpeta build
-node_modules/
