@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body class="font-manrope">
+    <!--header de la página-->
     <header>
-        <nav class="bg-bluefc text-white text-lg box-border">
-            <div class="container mx-auto flex justify-between">
+        <nav class="bg-bluefc text-white text-lg box-border h-20">
+            <div class="container mx-auto flex justify-center items-center h-full">
                 <div class="flex-grow text-center">
                     <a href="chatbot.html" class="block py-2">ChatBot</a>
                 </div>
@@ -31,6 +32,7 @@
             </div>
         </nav>
     </header>
+    <!--Acceso al chatbot y a un carrusel con acceso a articulos importantes-->
     <div class="flex min-h-screen">
         <div class="w-1/2 flex items-center justify-center">
             <div class="text-center p-20">
@@ -41,21 +43,46 @@
         </div>
         <div class="w-1/2 flex items-center justify-center">
             <div class="text-center p-20">
-                <div class="opacity-0 absolute">
-                <img src="image actual img/AYA.jpg" alt="" class="max-w-full h-auto filter brightness-50">
+                <div class="image actual opacity-0 absolute">
+                <img src="img/AYA.jpg" alt="" class="max-w-full h-auto filter brightness-50">
                     <p>Articulo de ejemplo sobre el AyA</p>
                 </div>
-                <div class="opacity-0 absolute">
-                    <img src="image  img/cnflarticulo.jpg" alt="" class="max-w-full h-auto filter brightness-50">
+                <div class="image  opacity-0 absolute">
+                    <img src="img/cnflarticulo.jpg" alt="" class="max-w-full h-auto filter brightness-50">
                         <p>Articulo de ejemplo sobre la CNFL</p>
                 </div>
-                <div class="opacity-0 absolute">
-                    <img src="image  img/CCSSarticulo.jpg" alt="" class="max-w-full h-auto filter brightness-50">
+                <div class="image  opacity-0 absolute">
+                    <img src="img/CCSSarticulo.jpg" alt="" class="max-w-full h-auto filter brightness-50">
                         <p>Articulo de ejemplo sobre la CCSS</p>
                 </div>
             </div>
         </div>
     </div>
+
+
+    <!--Seccion de datos del día-->
+    <div class="flex min-h-screen">
+        
+        <div class="w-1/2 flex items-center justify-center">
+            <div class="text-center p-20">
+                <p class="datoDelDia text-center text-2xl"></p>
+            </div>
+        </div>
+        <div class="w-1/2 flex items-center justify-center">
+            <div class=" ">
+                <h2 class="text-5xl mb-4">Dato del dia</h2>
+                
+            </div>
+        </div>
+    </div>
+
+<footer class="bg-purplefc text-white flex items-center justify-center h-40 ">
+    <p class="text-center text-2xl">Fast Claim 2024 <br>&copy Todos los derechos reservados</p>
+</footer>
+</body>
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/functions.js"></script>
+</html>
     
 
 
