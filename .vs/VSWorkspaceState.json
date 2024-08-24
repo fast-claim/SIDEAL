@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\public",
+    "\\WebApplication1",
+    "\\WebApplication1\\Controllers",
+    "\\WebApplication1\\obj"
   ],
-  "SelectedNode": "\\tailwind.config.js",
+  "SelectedNode": "\\WebApplication1\\Controllers\\WeatherForecastController.cs",
   "PreviewInSolutionExplorer": false
 }
