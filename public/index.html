@@ -11,27 +11,29 @@
     <header>
         <nav class="bg-bluefc text-white text-lg box-border h-20">
             <div class="container mx-auto flex justify-center items-center h-full">
-                <div class="flex-grow text-center">
+                <div class="flex-grow text-center hover:bg-white hover:text-bluefc transition duration-300">
                     <a href="chatbot.html" class="block py-2">ChatBot</a>
                 </div>
-                <div class="flex-grow text-center">
+                <div class="flex-grow text-center hover:bg-white hover:text-bluefc transition duration-300">
                     <a href="formularios.html" class="block py-2">Formularios</a>
                 </div>
-                <div class="flex-grow text-center">
+                <div class="flex-grow text-center hover:bg-white hover:text-bluefc transition duration-300">
                     <a href="articles.html" class="block py-2">Artículos</a>
                 </div>
-                <div class="flex-grow text-center">
+                <div class="flex-grow text-center hover:bg-white hover:text-bluefc transition duration-300">
                     <a href="documents.html" class="block py-2">Documentos</a>
                 </div>
-                <div class="flex-grow text-center">
+                <div class="flex-grow text-center hover:bg-white hover:text-bluefc transition duration-300">
                     <a href="contactos.html" class="block py-2">Contactos</a>
                 </div>
-                <div class="flex-grow text-center">
+                <div class="flex-grow text-center hover:bg-white hover:text-bluefc transition duration-300">
                     <a href="sugerencias.html" class="block py-2">Sugerencias</a>
                 </div>
             </div>
         </nav>
     </header>
+    
+    
     <!--Acceso al chatbot y a un carrusel con acceso a articulos importantes-->
     <div class="flex min-h-screen">
         <div class="w-1/2 flex items-center justify-center">
@@ -65,7 +67,7 @@
         
         <div class="w-1/2 flex items-center ">
             <div class="text-center p-20">
-                <p class="datoDelDia text-center text-2xl"></p>
+                <p  class="datoDelDia text-center text-2xl"></p>
             </div>
         </div>
         <div class="w-1/2 flex items-center justify-center">
@@ -76,10 +78,18 @@
         </div>
     </div>
 
-<footer class="bg-purplefc text-white flex items-center justify-center h-40 ">
-    <p class="w-1/2 text-center text-2xl">Fast Claim 2024 <br>&copy Todos los derechos reservados</p>
-    <p class="w-1/2 text-center text-2xl"></p>
-</footer>
+    <footer class="bg-purplefc text-white flex items-center justify-center h-40">
+        <p class="w-1/2 text-center text-2xl">
+            Fast Claim 2024 <br>&copy; Todos los derechos reservados
+        </p>
+        <p class="w-1/2 flex justify-between items-center px-10">
+            <!-- Asegúrate de que la ruta de tus imágenes sea correcta -->
+            <img src="img/svg/instagram.svg" alt="instagram" class="h-10 w-10">
+            <img src="img/svg/x.svg" alt="x/twitter" class="h-10 w-10">
+            <img src="img/svg/email.svg" alt="email" class="h-10 w-10">
+            <img src="img/svg/facebook.svg" alt="facebook" class="h-10 w-10">
+        </p>
+    </footer>
 </body>
 <script src="js/jquery-3.7.1.min.js"></script>
 <script src="js/functions.js"></script>
