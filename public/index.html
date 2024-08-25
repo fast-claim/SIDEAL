@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="js/jquery-3.7.1.min.js"></script>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body class="font-manrope">
@@ -35,7 +36,7 @@
     
     
     <!--Acceso al chatbot y a un carrusel con acceso a articulos importantes-->
-    <div class="flex min-h-screen">
+    <div class="flex min-h-screen items-center justify-center">
         <div class="w-1/2 flex items-center justify-center">
             <div class="text-center p-20">
                 <h2 class="text-5xl mb-4">Fast Claim</h2>
@@ -43,22 +44,37 @@
                 <a href="chatbot.html" class="bg-bluefc text-white text-3xl px-4 py-2 rounded">Probar ChatBot</a>
             </div>
         </div>
-        <div class="w-1/2 flex items-center justify-center">
-            <div class="text-center p-20">
-                <div class="image actual opacity-0 absolute">
-                <img src="img/AYA.jpg" alt="" class="max-w-full h-auto filter brightness-50">
-                    <p>Articulo de ejemplo sobre el AyA</p>
-                </div>
-                <div class="image  opacity-0 absolute">
-                    <img src="img/cnflarticulo.jpg" alt="" class="max-w-full h-auto filter brightness-50">
-                        <p>Articulo de ejemplo sobre la CNFL</p>
-                </div>
-                <div class="image  opacity-0 absolute">
-                    <img src="img/CCSSarticulo.jpg" alt="" class="max-w-full h-auto filter brightness-50">
-                        <p>Articulo de ejemplo sobre la CCSS</p>
-                </div>
+        <div class="w-1/2 h-96 bg-gradient-to-br from-cyanfc to-purplefc flex items-center justify-center relative overflow-hidden rounded-lg shadow-lg mx-20">
+            <!-- Imagen 1 -->
+            <div class="image opacity-100 absolute w-full h-full flex-shrink-0 flex flex-col items-center justify-center">
+              <img src="img/AYA.jpg" alt="Articulo AyA" class="w-full h-full object-cover filter brightness-75 rounded-lg">
+              <p class="absolute text-white text-xl bottom-4">Artículo de ejemplo sobre el AyA</p>
             </div>
-        </div>
+            <!-- Imagen 2 -->
+            <div class="image opacity-0 absolute w-full h-full flex-shrink-0 flex flex-col items-center justify-center">
+              <img src="img/cnflarticulo.jpg" alt="Articulo CNFL" class="w-full h-full object-cover filter brightness-75 rounded-lg">
+              <p class="absolute text-white text-xl bottom-4">Artículo de ejemplo sobre la CNFL</p>
+            </div>
+            <!-- Imagen 3 -->
+            <div class="image opacity-0 absolute w-full h-full flex-shrink-0 flex flex-col items-center justify-center">
+              <img src="img/CCSSarticulo.jpg" alt="Articulo CCSS" class="w-full h-full object-cover filter brightness-75 rounded-lg">
+              <p class="absolute text-white text-xl bottom-4">Artículo de ejemplo sobre la CCSS</p>
+            </div>
+          
+            <!-- Flecha izquierda -->
+            <button id="prev" class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-70 text-black p-3 rounded-full hover:bg-opacity-90 transition z-20">
+              &#8592;
+            </button>
+          
+            <!-- Flecha derecha -->
+            <button id="next" class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-70 text-black p-3 rounded-full hover:bg-opacity-90 transition z-20">
+              &#8594;
+            </button> 
+          </div>
+          
+
+          
+          
     </div>
 
 
@@ -96,8 +112,10 @@
             <img src="img/svg/facebook.svg" alt="facebook" class="h-10 w-10">
         </p>
     </footer>
+    <script src="js/functions.js"></script>
+    <script src="js/carrousel.js"></script>
 </body>
-<script src="js/jquery-3.7.1.min.js"></script>
-<script src="js/functions.js"></script>
+
+
 </html>
     
