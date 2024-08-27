@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <style>
+        .perspective {
+            perspective: 1000px;
+        }
+
+        .preserve-3d {
+            transform-style: preserve-3d;
+        }
+
+        .rotate-y-180 {
+            transform: rotateY(180deg);
+        }
+
+        .backface-hidden {
+            backface-visibility: hidden;
+        }
+    </style>
+</head>
+<body class="font-manrope flex flex-col min-h-screen bg-gray-100">
+
+    <header>
+        <nav class="bg-bluefc text-white text-lg box-border h-20">
+            <div class="container mx-auto flex justify-center items-center h-full">
+                <div class="flex-grow text-center hover:bg-white hover:text-bluefc transition duration-300">
+                    <a href="chatbot.html" class="block py-2">ChatBot</a>
+                </div>
+                <div class="flex-grow text-center hover:bg-white hover:text-bluefc transition duration-300">
+                    <a href="formularios.html" class="block py-2">Formularios</a>
+                </div>
+                <div class="flex-grow text-center hover:bg-white hover:text-bluefc transition duration-300">
+                    <a href="articles.html" class="block py-2">Artículos</a>
+                </div>
+                <div class="flex-grow text-center hover:bg-white hover:text-bluefc transition duration-300">
+                    <a href="documents.html" class="block py-2">Documentos</a>
+                </div>
+                <div class="flex-grow text-center hover:bg-white hover:text-bluefc transition duration-300">
+                    <a href="contactos.html" class="block py-2">Contactos</a>
+                </div>
+                <div class="flex-grow text-center hover:bg-white hover:text-bluefc transition duration-300">
+                    <a href="sugerencias.html" class="block py-2">Sugerencias</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="flex flex-grow items-center justify-center ">
+        <div class="group h-96 w-80 perspective">
+            <div class="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 preserve-3d" id="card">
+      
+                <div class="absolute inset-0 backface-hidden">
+                    <img class="h-full w-full rounded-xl object-cover shadow-xl shadow-black/40" src="../public/img/CCSSarticulo.jpg" alt="Imagen" />
+                </div>
+
+                <div class="absolute inset-0 h-full w-full rounded-xl bg-black/80 px-12 text-center text-slate-200 rotate-y-180 backface-hidden">
+                    <div class="flex min-h-full flex-col items-center justify-center">
+                        <h1 class="text-3xl font-bold">Caja Costarricense de Seguro Social</h1>
+                        <p class="text-lg">506-2539 0000</p>
+                        <p class="text-base">WWMF+2F7 Caja Costarricense de Seguro Social, San José, Catedral</p>
+                        <a href="https://www.ccss.sa.cr"><button class="mt-2 rounded-md bg-neutral-800 py-1 px-2 text-sm hover:bg-neutral-900">Leer más</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="group h-96 w-80 perspective mx-4">
+            <div class="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 preserve-3d" id="card-2">
+      
+                <div class="absolute inset-0 backface-hidden">
+                    <img class="h-full w-full rounded-xl object-cover shadow-xl shadow-black/40" src="../public/img/AYA.jpg" alt="Imagen" />
+                </div>
+
+                <div class="absolute inset-0 h-full w-full rounded-xl bg-black/80 px-12 text-center text-slate-200 rotate-y-180 backface-hidden">
+                    <div class="flex min-h-full flex-col items-center justify-center">
+                        <h1 class="text-3xl font-bold">Instituto Costarricense de Acueductos y Alcantarillados</h1>
+                        <p class="text-lg">800-7376783</p>
+                        <p class="text-base">WWHF+PVR, Av. 10, San José, Barrio Chino</p>
+                        <a href="https://www.aya.go.cr/SitePages/Principal.aspx"><button class="mt-2 rounded-md bg-neutral-800 py-1 px-2 text-sm hover:bg-neutral-900">Leer más</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="group h-96 w-80 perspective">
+            <div class="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 preserve-3d" id="card-3">
+      
+                <div class="absolute inset-0 backface-hidden">
+                    <img class="h-full w-full rounded-xl object-cover shadow-xl shadow-black/40" src="../public/img/cnflarticulo.jpg" alt="Imagen" />
+                </div>
+
+                <div class="absolute inset-0 h-full w-full rounded-xl bg-black/80 px-12 text-center text-slate-200 rotate-y-180 backface-hidden ">
+                    <div class="flex min-h-full flex-col items-center justify-center">
+                        <h1 class="text-3xl font-bold">Compañía Nacional de Fuerza y Luz S.A.</h1>
+                        <p class="text-lg">506-8319 5273</p>
+                        <p class="text-base">C. Central Alfredo Volio calle 0, San José, Dolorosa</p>
+                        <a href=""><button class="mt-2 rounded-md bg-neutral-800 py-1 px-2 text-sm hover:bg-neutral-900">Leer más</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+
+    <footer class="bg-purplefc text-white flex items-center justify-center h-40">
+        <p class="w-1/2 text-center text-2xl">
+            Fast Claim 2024 <br>&copy; Todos los derechos reservados
+        </p>
+        <p class="w-1/2 flex justify-between items-center px-10">
+            <img src="img/svg/instagram.svg" alt="instagram" class="h-10 w-10">
+            <img src="img/svg/x.svg" alt="x/twitter" class="h-10 w-10">
+            <img src="img/svg/email.svg" alt="email" class="h-10 w-10">
+            <img src="img/svg/facebook.svg" alt="facebook" class="h-10 w-10">
+        </p>
+    </footer>
+
+    <script>
+        const card = document.getElementById('card');
+
+        card.addEventListener('mouseover', () => {
+            card.classList.add('rotate-y-180');
+        });
+
+        card.addEventListener('mouseout', () => {
+            card.classList.remove('rotate-y-180');
+        });
+        
+        const card2 = document.getElementById('card-2');
+
+        card2.addEventListener('mouseover', () => {
+            card2.classList.add('rotate-y-180');
+        });
+
+        card2.addEventListener('mouseout', () => {
+            card2.classList.remove('rotate-y-180');
+        });
+
+        const card3 = document.getElementById('card-3');
+
+        card3.addEventListener('mouseover', () => {
+            card3.classList.add('rotate-y-180');
+        });
+
+        card3.addEventListener('mouseout', () => {
+            card3.classList.remove('rotate-y-180');
+        });
+    </script>
+</body>
+</html>
