@@ -7,37 +7,41 @@
     <script src="js/jquery-3.7.1.min.js"></script>
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body class="font-manrope">
+<body class="font-poppins">
     <!--header de la página-->
-    <header>
-        <nav class="bg-bluefc text-white text-lg box-border h-20">
-            <div class="container mx-auto flex justify-center items-center h-full">
-                <h2 class="text-white font-medium select-none mr-40 text-3xl">Fast Claim</h2>
-                <div class="flex-grow text-center hover:bg-white hover:text-bluefc transition duration-300 text-lg ml-40">
-                    <a href="chatbot.html" class="block py-2">ChatBot</a>
-                </div>
-                <div class="flex-grow text-center hover:bg-white hover:text-bluefc transition duration-300 text-lg">
-                    <a href="formularios.html" class="block py-2">Formularios</a>
-                </div>
-                <div class="flex-grow text-center hover:bg-white hover:text-bluefc transition duration-300 text-lg">
-                    <a href="articles.html" class="block py-2">Artículos</a>
-                </div>
-                <div class="flex-grow text-center hover:bg-white hover:text-bluefc transition duration-300 text-lg">
-                    <a href="documents.html" class="block py-2">Documentos</a>
-                </div>
-                <div class="flex-grow text-center hover:bg-white hover:text-bluefc transition duration-300 text-lg">
-                    <a href="contactos.html" class="block py-2">Contactos</a>
-                </div>
-                <div class="flex-grow text-center hover:bg-white hover:text-bluefc transition duration-300 text-lg">
-                    <a href="sugerencias.html" class="block py-2">Sugerencias</a>
-                </div>
-            </div>
-        </nav>
+    <header class="bg-bluefc"> 
+ <nav class="h-16 flex justify-between items-center w-[92%] mx-auto">
+<div class="ml-16 text-white text-3xl font-semibold hover:text-gray-500 cursor-pointer">Fast Claim</div>
+<div class="">
+    <ul class="flex items-center gap-9">
+        <li>
+            <a class="text-white text-lg hover:text-gray-500 h-20 " href="chatbot.html">ChatBot</a>
+        </li>
+        <li>
+            <a class="text-white text-lg hover:text-gray-500 h-20" href="formularios.html">Formularios</a>
+        </li>
+        <li>
+            <a class="text-white text-lg hover:text-gray-500 h-20" href="articles.html">Articulos</a>
+        </li>
+        <li>
+            <a class="text-white text-lg hover:text-gray-500 h-20" href="documentos.html">Documentos</a>
+        </li>
+        <li>
+            <a class="text-white text-lg hover:text-gray-500 h-20" href="contactos.html">Contactos</a>
+        </li>
+        <li>
+            <a class="text-white text-lg hover:text-gray-500 h-20 mr-20" href="sugerencias.html">Sugerencias</a>
+        </li>
+    </ul>
+</div>
+ </nav>
     </header>
     
     
     <!--Acceso al chatbot y a un carrusel con acceso a articulos importantes-->
-    <div class="flex min-h-screen items-center justify-center">
+    
+    <div class="ml-16 h-3/6 w-11/12 bg-gray-100 rounded-lg shadow-xl">
+    <div class="flex min-h-screen items-center justify-center mt-4">
         <div class="w-1/2 flex items-center justify-center">
             <div class="text-center p-20">
                 <h2 class="text-5xl mb-4">Fast Claim</h2>
@@ -73,13 +77,13 @@
             </button> 
           </div>
           
-
-          
-          
+  
+    </div>
     </div>
 
 
     <!--Seccion de datos del día-->
+    <div class="ml-16 h-3/6 w-11/12 bg-gray-100 rounded-lg shadow-xl mt-10">
     <div class="flex min-h-screen ">
         <div class="w-1/2 h-[300px] flex items-center justify-center min-h-screen">
             <div class="w-3/4 h-4/6 bg-gradient-to-br from-cyanfc to-purplefc text-white p-10 rounded-2xl shadow-lg flex flex-col items-center justify-between">
@@ -100,8 +104,10 @@
             </div>
         </div>
     </div>
+    </div>
+    
     <!--Seccion final del index-->
-    <div class="h-96 relative mb-8">
+    <div class="h-72 relative mb-8 mt-10">
         <div class="h-5/6 overflow-hidden flex items-center justify-center relative">
             <!-- Imagen con brillo ajustado -->
             <img class="filter brightness-50 w-full h-full object-cover" src="img/parallax.jpg" alt="">
@@ -115,8 +121,8 @@
     
     <!-- Contenedor para subtítulo y párrafo -->
     <div class="text-center max-w-3xl mx-auto mb-12">
-        <p class="text-3xl font-bold mb-4">Asistente en la Presentación de Denuncias</p>
-        <p class="text-2xl leading-relaxed">
+        <p class="text-2xl font-bold mb-4">Asistente en la Presentación de Denuncias</p>
+        <p class="text-xl leading-relaxed">
             Fast-Claim es una herramienta diseñada para brindar asistencia a las personas que necesitan presentar denuncias ante instituciones públicas en Costa Rica. 
             Este proyecto responde a la necesidad urgente de simplificar y guiar a los jóvenes entre 18 y 40 años, quienes muchas veces se 
             sienten desinformados sobre los procesos legales y burocráticos. 
@@ -127,7 +133,7 @@
     </div>
     
 
-    <div class="h-96 relative mb-8">
+    <div class="h-72 relative mb-8">
         <div class="h-5/6 overflow-hidden flex items-center justify-center relative">
             <!-- Imagen con brillo ajustado -->
             <img class="filter brightness-50 w-full h-full object-cover" src="img/AyA-3.jpg" alt="">
@@ -141,8 +147,8 @@
     
     <!-- Contenedor para subtitulo y párrafo -->
     <div class="text-center max-w-3xl mx-auto mb-12">
-        <p class="text-3xl font-bold mb-4">El Problema de la Desinformación en los Procesos Legales</p>
-        <p class="text-2xl leading-relaxed">
+        <p class="text-2xl font-bold mb-4">El Problema de la Desinformación en los Procesos Legales</p>
+        <p class="text-xl leading-relaxed">
             Una de las mayores barreras para la justicia es la falta de conocimiento 
             sobre cómo y dónde presentar denuncias. 
             Este desconocimiento puede perpetuar injusticias y frustraciones entre los ciudadanos. 
@@ -153,7 +159,7 @@
         </p>
     </div>
     
-    <div class="h-96 relative mb-8">
+    <div class="h-72 relative mb-8">
         <div class="h-5/6 overflow-hidden flex items-center justify-center relative">
             <!-- Imagen con brillo ajustado -->
             <img class="filter brightness-50 w-full h-full object-cover" src="img/ccssedificio.jpg" alt="">
@@ -167,8 +173,8 @@
     
     <!-- Contenedor para subtitulo y párrafo -->
     <div class="text-center max-w-3xl mx-auto mb-12">
-        <p class="text-3xl font-bold mb-4">Centralización de Información Legal y Atención Personalizada</p>
-        <p class="text-2xl leading-relaxed">
+        <p class="text-2xl font-bold mb-4">Centralización de Información Legal y Atención Personalizada</p>
+        <p class="text-xl leading-relaxed">
             Fast-Claim busca ser el punto central donde los usuarios puedan acceder 
             a toda la información relevante sobre la presentación de denuncias. 
             A menudo, la información está dispersa y desorganizada, 
@@ -185,18 +191,20 @@
 
 
 
-
-    <footer class="bg-bluefc text-white flex items-center justify-center h-20">
-        <p class="w-1/2 text-left text-lg">
-            Fast Claim 2024 <br>&copy; Todos los derechos reservados
-        </p>
+    <div class="bg-white text-white flex items-center justify-center h-20">
         <p class="w-1/2 flex justify-between items-center px-20">
             <!-- Asegúrate de que la ruta de tus imágenes sea correcta -->
-            <img src="img/svg/instagram.svg" alt="instagram" class="h-10 w-10">
-            <img src="img/svg/x.svg" alt="x/twitter" class="h-10 w-10">
-            <img src="img/svg/email.svg" alt="email" class="h-10 w-10">
-            <img src="img/svg/facebook.svg" alt="facebook" class="h-10 w-10">
+            <div class="w-8 h-8 justify-between ml-12 bg-bluefc rounded-lg hover:cursor-pointer"><img src="img/svg/instagram.svg" alt="instagram" class="h-8 w-8"></div>
+            <div class="w-8 h-8 justify-between ml-12 bg-bluefc rounded-lg hover:cursor-pointer"><img src="img/svg/x.svg" alt="x/twitter" class="h-8 w-8"></div>
+            <div class="w-8 h-8 justify-between ml-12 bg-bluefc rounded-lg hover:cursor-pointer"><img src="img/svg/email.svg" alt="email" class="h-8 w-8"></div>
+            <div class="w-8 h-8 justify-between ml-12 mr-0 bg-bluefc rounded-lg hover:cursor-pointer"><img src="img/svg/facebook.svg" alt="facebook" class="h-8 w-8"></div>
         </p>
+        </div>
+    <footer class="bg-bluefc text-white flex items-center justify-center h-20">
+        <div class="w-full items-center">        
+            <p class="w-1/2 text-center text-lg ml-80">
+            Fast Claim 2024 &copy; Todos los derechos reservados
+        </p></div>
     </footer>
     <script src="js/functions.js"></script>
     <script src="js/carrousel.js"></script>
