@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body class="font-manrope">
-    
+
     <header>
         <nav class="bg-bluefc text-white text-lg box-border h-20">
             <div class="container mx-auto flex justify-center items-center h-full">
@@ -32,5 +32,35 @@
             </div>
         </nav>
     </header>
+
+    <div class="flex min-h-screen items-center justify-center bg-slate-100">
+        <div class="group h-96 w-80 [perspective:1000px]">
+          <div class="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+            <div class="absolute inset-0">
+              <img class="h-full w-full rounded-xl object-cover shadow-xl shadow-black/40" src="../public/img/AYA.jpg" alt="" />
+            </div>
+            <div class="absolute inset-0 h-full w-full rounded-xl bg-black/80 px-12 text-center text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden]">
+              <div class="flex min-h-full flex-col items-center justify-center">
+              <h1 class="text-3xl font-bold">Instituto Costarricense de Acueductos y Alcantarillados</h1>
+              <p class="text-lg">800-7376783</p>
+              <p class="text-base">WWHF+PVR, Av. 10, San José, Barrio Chino</p>
+                <a href="https://www.aya.go.cr/SitePages/Principal.aspx"></a><button class="mt-2 rounded-md bg-neutral-800 py-1 px-2 text-sm hover:bg-neutral-900">leer mas</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <footer class="bg-purplefc text-white flex items-center justify-center h-40">
+        <p class="w-1/2 text-center text-2xl">
+            Fast Claim 2024 <br>&copy; Todos los derechos reservados
+        </p>
+        <p class="w-1/2 flex justify-between items-center px-10">
+            <img src="img/svg/instagram.svg" alt="instagram" class="h-10 w-10">
+            <img src="img/svg/x.svg" alt="x/twitter" class="h-10 w-10">
+            <img src="img/svg/email.svg" alt="email" class="h-10 w-10">
+            <img src="img/svg/facebook.svg" alt="facebook" class="h-10 w-10">
+        </p>
+    </footer>
 </body>
 </html>
