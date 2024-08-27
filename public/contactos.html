@@ -29,22 +29,23 @@
     <header>
         <nav class="bg-bluefc text-white text-lg box-border h-20">
             <div class="container mx-auto flex justify-center items-center h-full">
-                <div class="flex-grow text-center hover:bg-white hover:text-bluefc transition duration-300">
+                <h2 class="text-white font-medium select-none mr-40 text-3xl">Fast Claim</h2>
+                <div class="flex-grow text-center hover:bg-white hover:text-bluefc transition duration-300 text-lg ml-40">
                     <a href="chatbot.html" class="block py-2">ChatBot</a>
                 </div>
-                <div class="flex-grow text-center hover:bg-white hover:text-bluefc transition duration-300">
+                <div class="flex-grow text-center hover:bg-white hover:text-bluefc transition duration-300 text-lg">
                     <a href="formularios.html" class="block py-2">Formularios</a>
                 </div>
-                <div class="flex-grow text-center hover:bg-white hover:text-bluefc transition duration-300">
+                <div class="flex-grow text-center hover:bg-white hover:text-bluefc transition duration-300 text-lg">
                     <a href="articles.html" class="block py-2">Artículos</a>
                 </div>
-                <div class="flex-grow text-center hover:bg-white hover:text-bluefc transition duration-300">
+                <div class="flex-grow text-center hover:bg-white hover:text-bluefc transition duration-300 text-lg">
                     <a href="documents.html" class="block py-2">Documentos</a>
                 </div>
-                <div class="flex-grow text-center hover:bg-white hover:text-bluefc transition duration-300">
+                <div class="flex-grow text-center hover:bg-white hover:text-bluefc transition duration-300 text-lg">
                     <a href="contactos.html" class="block py-2">Contactos</a>
                 </div>
-                <div class="flex-grow text-center hover:bg-white hover:text-bluefc transition duration-300">
+                <div class="flex-grow text-center hover:bg-white hover:text-bluefc transition duration-300 text-lg">
                     <a href="sugerencias.html" class="block py-2">Sugerencias</a>
                 </div>
             </div>
@@ -52,7 +53,7 @@
     </header>
 
     <div class="flex flex-grow items-center justify-center ">
-        <div class="group h-96 w-80 perspective">
+        <div class="group h-96 w-80 perspective right-10">
             <div class="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 preserve-3d" id="card">
       
                 <div class="absolute inset-0 backface-hidden">
@@ -70,7 +71,7 @@
             </div>
         </div>
 
-        <div class="group h-96 w-80 perspective mx-4">
+        <div class="group h-96 w-80 perspective mx-3">
             <div class="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 preserve-3d" id="card-2">
       
                 <div class="absolute inset-0 backface-hidden">
@@ -87,7 +88,8 @@
                 </div>
             </div>
         </div>
-        <div class="group h-96 w-80 perspective">
+
+        <div class="group h-96 w-80 perspective ">
             <div class="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 preserve-3d" id="card-3">
       
                 <div class="absolute inset-0 backface-hidden">
@@ -99,21 +101,40 @@
                         <h1 class="text-3xl font-bold">Compañía Nacional de Fuerza y Luz S.A.</h1>
                         <p class="text-lg">506-8319 5273</p>
                         <p class="text-base">C. Central Alfredo Volio calle 0, San José, Dolorosa</p>
-                        <a href=""><button class="mt-2 rounded-md bg-neutral-800 py-1 px-2 text-sm hover:bg-neutral-900">Leer más</button></a>
+                        <a href="https://www.cnfl.go.cr"><button class="mt-2 rounded-md bg-neutral-800 py-1 px-2 text-sm hover:bg-neutral-900">Leer más</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <div class="group h-96 w-80 perspective mx-3">
+                <div class="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 preserve-3d" id="card-4">
+          
+                    <div class="absolute inset-0 backface-hidden">
+                        <img class="h-full w-full rounded-xl object-cover shadow-xl shadow-black/40" src="../public/img/mtss.jpg" alt="Imagen" />
+                    </div>
+    
+                    <div class="absolute inset-0 h-full w-full rounded-xl bg-black/80 px-12 text-center text-slate-200 rotate-y-180 backface-hidden ">
+                        <div class="flex min-h-full flex-col items-center justify-center">
+                        <h1 class="text-3xl font-bold">Ministerio de Trabajo y Seguridad Social de Costa Rica.</h1>
+                        <p class="text-lg">800-872 2256</p>
+                        <p class="text-base">Edificio Benjamín Núñez, 50 metros este de la ULACIT. Barrio  Tournón</p>
+                        <a href="https://www.mtss.go.cr"><button class="mt-2 rounded-md bg-neutral-800 py-1 px-2 text-sm hover:bg-neutral-900">Leer más</button></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
+</div>
     
 
 
-    <footer class="bg-purplefc text-white flex items-center justify-center h-40">
-        <p class="w-1/2 text-center text-2xl">
+    <footer class="bg-bluefc text-white flex items-center justify-center h-20">
+        <p class="w-1/2 text-left text-lg">
             Fast Claim 2024 <br>&copy; Todos los derechos reservados
         </p>
-        <p class="w-1/2 flex justify-between items-center px-10">
+        <p class="w-1/2 flex justify-between items-center px-20">
+            <!-- Asegúrate de que la ruta de tus imágenes sea correcta -->
             <img src="img/svg/instagram.svg" alt="instagram" class="h-10 w-10">
             <img src="img/svg/x.svg" alt="x/twitter" class="h-10 w-10">
             <img src="img/svg/email.svg" alt="email" class="h-10 w-10">
@@ -150,6 +171,16 @@
 
         card3.addEventListener('mouseout', () => {
             card3.classList.remove('rotate-y-180');
+        });
+
+        const card4 = document.getElementById('card-4');
+
+        card4.addEventListener('mouseover', () => {
+            card4.classList.add('rotate-y-180');
+        });
+
+        card4.addEventListener('mouseout', () => {
+            card4.classList.remove('rotate-y-180');
         });
     </script>
 </body>
