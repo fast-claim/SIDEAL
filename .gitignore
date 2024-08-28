@@ -7,9 +7,6 @@ node_modules/
 #ignorar .vs/
 .vs/
 
-#ignorar bin/
 bin/
-
-#ignorar obj/
 
 obj/
