@@ -26,30 +26,33 @@
 </head>
 <body class="font-manrope flex flex-col min-h-screen bg-gray-100">
 
-    <header>
-        <nav class="bg-bluefc text-white text-lg box-border h-20">
-            <div class="container mx-auto flex justify-center items-center h-full">
-                <div class="flex-grow text-center hover:bg-white hover:text-bluefc transition duration-300">
-                    <a href="chatbot.html" class="block py-2">ChatBot</a>
-                </div>
-                <div class="flex-grow text-center hover:bg-white hover:text-bluefc transition duration-300">
-                    <a href="formularios.html" class="block py-2">Formularios</a>
-                </div>
-                <div class="flex-grow text-center hover:bg-white hover:text-bluefc transition duration-300">
-                    <a href="articles.html" class="block py-2">Artículos</a>
-                </div>
-                <div class="flex-grow text-center hover:bg-white hover:text-bluefc transition duration-300">
-                    <a href="documents.html" class="block py-2">Documentos</a>
-                </div>
-                <div class="flex-grow text-center hover:bg-white hover:text-bluefc transition duration-300">
-                    <a href="contactos.html" class="block py-2">Contactos</a>
-                </div>
-                <div class="flex-grow text-center hover:bg-white hover:text-bluefc transition duration-300">
-                    <a href="sugerencias.html" class="block py-2">Sugerencias</a>
-                </div>
-            </div>
+    <header class="bg-bluefc"> 
+        <nav class="h-16 flex justify-between items-center w-[92%] mx-auto">
+       <div class="ml-16 text-white text-3xl font-semibold hover:text-gray-500 cursor-pointer">Fast Claim</div>
+       <div class="">
+           <ul class="flex items-center gap-9">
+               <li>
+                   <a class="text-white text-lg hover:text-gray-500 h-20 " href="chatbot.html">ChatBot</a>
+               </li>
+               <li>
+                   <a class="text-white text-lg hover:text-gray-500 h-20" href="formularios.html">Formularios</a>
+               </li>
+               <li>
+                   <a class="text-white text-lg hover:text-gray-500 h-20" href="articles.html">Articulos</a>
+               </li>
+               <li>
+                   <a class="text-white text-lg hover:text-gray-500 h-20" href="documentos.html">Documentos</a>
+               </li>
+               <li>
+                   <a class="text-white text-lg hover:text-gray-500 h-20" href="contactos.html">Contactos</a>
+               </li>
+               <li>
+                   <a class="text-white text-lg hover:text-gray-500 h-20 mr-20" href="sugerencias.html">Sugerencias</a>
+               </li>
+           </ul>
+       </div>
         </nav>
-    </header>
+           </header>
 
     <div class="flex flex-grow items-center justify-center ">
         <div class="group h-96 w-80 perspective">
@@ -109,16 +112,20 @@
     
 
 
-    <footer class="bg-purplefc text-white flex items-center justify-center h-40">
-        <p class="w-1/2 text-center text-2xl">
-            Fast Claim 2024 <br>&copy; Todos los derechos reservados
+    <div class="bg-white text-white flex items-center justify-center h-20 ">
+        <p class="w-1/2 flex justify-between items-center px-20">
+            <!-- Asegúrate de que la ruta de tus imágenes sea correcta -->
+            <div class="w-8 h-8 justify-between ml-12 bg-bluefc rounded-lg cursor-pointer"><img src="img/svg/instagram.svg" alt="instagram" class="h-8 w-8"></div>
+            <div class="w-8 h-8 justify-between ml-12 bg-bluefc rounded-lg cursor-pointer"><img src="img/svg/x.svg" alt="x/twitter" class="h-8 w-8"></div>
+            <div class="w-8 h-8 justify-between ml-12 bg-bluefc rounded-lg cursor-pointer"><img src="img/svg/email.svg" alt="email" class="h-8 w-8"></div>
+            <div class="w-8 h-8 justify-between ml-12 mr-0 bg-bluefc rounded-lg cursor-pointer"><img src="img/svg/facebook.svg" alt="facebook" class="h-8 w-8"></div>
         </p>
-        <p class="w-1/2 flex justify-between items-center px-10">
-            <img src="img/svg/instagram.svg" alt="instagram" class="h-10 w-10">
-            <img src="img/svg/x.svg" alt="x/twitter" class="h-10 w-10">
-            <img src="img/svg/email.svg" alt="email" class="h-10 w-10">
-            <img src="img/svg/facebook.svg" alt="facebook" class="h-10 w-10">
-        </p>
+        </div>
+    <footer class="bg-bluefc text-white flex items-center justify-center h-16">
+        <div class="w-full items-center">        
+            <p class="w-1/2 text-center text-base ml-80">
+            Fast Claim 2024 &copy; 
+        </p></div>
     </footer>
 
     <script>
