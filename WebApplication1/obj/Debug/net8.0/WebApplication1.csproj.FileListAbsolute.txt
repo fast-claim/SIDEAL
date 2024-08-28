@@ -31,3 +31,7 @@ D:\Documentos\Programación\fast_claim\fastclaim\WebApplication1\obj\Debug\net8.
 D:\Documentos\Programación\fast_claim\fastclaim\WebApplication1\obj\Debug\net8.0\WebApplication1.pdb
 D:\Documentos\Programación\fast_claim\fastclaim\WebApplication1\obj\Debug\net8.0\WebApplication1.genruntimeconfig.cache
 D:\Documentos\Programación\fast_claim\fastclaim\WebApplication1\obj\Debug\net8.0\ref\WebApplication1.dll
+D:\Documentos\Programación\fast_claim\fastclaim\WebApplication1\bin\Debug\net8.0\launchSettings.json
+D:\Documentos\Programación\fast_claim\fastclaim\WebApplication1\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Documentos\Programación\fast_claim\fastclaim\WebApplication1\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\Documentos\Programación\fast_claim\fastclaim\WebApplication1\bin\Debug\net8.0\OpenAI_API.dll
