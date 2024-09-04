@@ -1,6 +1,20 @@
-//$(document).ready(function(){
+$(document).ready(function(){
+    $("#index1").on('click',function(){
+        $("#textIndex1").slideToggle(1000);
+    })
+    $("#index2").on('click',function(){
+        $("#textIndex2").slideToggle(1000);
+    })
+    $("#index3").on('click',function(){
+        $("#textIndex3").slideToggle(1000);
+    })
 
-//});
+
+
+
+
+
+});
 getData();
 
 function getData() {
