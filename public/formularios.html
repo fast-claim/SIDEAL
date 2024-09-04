@@ -2,69 +2,111 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=.9+, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link href="css/styles.css" rel="stylesheet">
 </head>
-<body>
-    <header class="bg-bluefc"> 
+
+<body class="h-screen w-screen flex flex-col justify-between">
+    <!-- Header fijo -->
+    <header class="bg-bluefc fixed top-0 w-full z-10"> 
         <nav class="h-16 flex justify-between items-center w-[92%] mx-auto">
-       <div class="ml-16 text-white text-3xl font-semibold hover:text-gray-500 cursor-pointer"><a href="index.html">Fast Claim</a></div>
-       <div class="">
-           <ul class="flex items-center gap-9">
-               <li>
-                   <a class="text-white text-lg hover:text-gray-500 h-20 " href="chatbot.html">ChatBot</a>
-               </li>
-               <li>
-                   <a class="text-white text-lg hover:text-gray-500 h-20" href="formularios.html">Formularios</a>
-               </li>
-               <li>
-                   <a class="text-white text-lg hover:text-gray-500 h-20" href="articles.html">Articulos</a>
-               </li>
-               <li>
-                   <a class="text-white text-lg hover:text-gray-500 h-20" href="documentos.html">Documentos</a>
-               </li>
-               <li>
-                   <a class="text-white text-lg hover:text-gray-500 h-20" href="contactos.html">Contactos</a>
-               </li>
-               <li>
-                   <a class="text-white text-lg hover:text-gray-500 h-20 mr-20" href="sugerencias.html">Sugerencias</a>
-               </li>
-           </ul>
-       </div>
+            <div class="ml-16 text-white text-3xl font-semibold hover:text-gray-500 cursor-pointer">
+                <a href="index.html">Fast Claim</a>
+            </div>
+            <div class="">
+                <ul class="flex items-center gap-9">
+                    <li><a class="text-white text-lg hover:text-gray-500" href="chatbot.html">ChatBot</a></li>
+                    <li><a class="text-white text-lg hover:text-gray-500" href="formularios.html">Formularios</a></li>
+                    <li><a class="text-white text-lg hover:text-gray-500" href="articles.html">Articulos</a></li>
+                    <li><a class="text-white text-lg hover:text-gray-500" href="documentos.html">Documentos</a></li>
+                    <li><a class="text-white text-lg hover:text-gray-500" href="contactos.html">Contactos</a></li>
+                    <li><a class="text-white text-lg hover:text-gray-500 mr-20" href="sugerencias.html">Sugerencias</a></li>
+                </ul>
+            </div>
         </nav>
-           </header>
-    <div class="ml-16 h-3/6 w-11/12 bg-gray-100 rounded-lg shadow-xl mt-8 flex ">
-        <div class="w-1/3 bg-bluefc rounded-l-lg shadow-xl px-3">
-            <ul>
-                <li class="text-white p-2">CCSS</li>
-                <li class="text-white p-2">CNFL</li>
-                <li class="text-white p-2">MTSS</li>
-                <li class="text-white p-2">AyA</li>
-            </ul>
-        </div>
-        <div class="w-2/3 bg-gradient-to-br from-cyanfc to-purplefc rounded-r-lg shadow-xl px-3 flex">
-            <div class="w-1/3 bg-gray-100 rounded-lg opacity-70 m-4 p-4 flex flex-col items-center justify-center shadow-2xl">
-                <p class="text-lg font-semibold mb-4 text-center">Formulario para denuncias de la CCSS</p>
-                
-                <a href="https://www.ccss.sa.cr/tramites" target="_blank" class="w-3/4 bg-purple-600 text-white text-xl py-2 px-4 rounded-lg hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 text-center block">
-                    Obtener
-                </a>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="flex-grow flex justify-center overflow-x-hidden mt-16 mb-16">
+        <div class="ml-16 h-[600px] max-w-full bg-gray-100 rounded-lg shadow-xl mt-8 flex mb-4 overflow-hidden">
+            <!-- Sección de filtros a la izquierda (fija con scroll vertical) -->
+            <div class="w-1/4 bg-bluefc rounded-l-lg shadow-xl px-3 flex flex-col justify-start py-6 overflow-y-auto h-[300px] sticky top-0">
+                <h2 class="text-white text-2xl font-bold mb-4 text-center">Filtrar por Tipo</h2>
+                <ul class="flex flex-col space-y-3 items-center">
+                    <li><button class="bg-white text-bluefc font-semibold py-2 px-4 rounded-lg hover:bg-blue-200 w-full">CCSS</button></li>
+                    <li><button class="bg-white text-bluefc font-semibold py-2 px-4 rounded-lg hover:bg-blue-200 w-full">CNFL/ICE</button></li>
+                    <li><button class="bg-white text-bluefc font-semibold py-2 px-4 rounded-lg hover:bg-blue-200 w-full">MTSS</button></li>
+                    <li><button class="bg-white text-bluefc font-semibold py-2 px-4 rounded-lg hover:bg-blue-200 w-full">AyA</button></li>
+                    <!-- Más botones para demostrar el scroll -->
+                    <li><button class="bg-white text-bluefc font-semibold py-2 px-4 rounded-lg hover:bg-blue-200 w-full">Opción 5</button></li>
+                    <li><button class="bg-white text-bluefc font-semibold py-2 px-4 rounded-lg hover:bg-blue-200 w-full">Opción 6</button></li>
+                    <li><button class="bg-white text-bluefc font-semibold py-2 px-4 rounded-lg hover:bg-blue-200 w-full">Opción 7</button></li>
+                    <li><button class="bg-white text-bluefc font-semibold py-2 px-4 rounded-lg hover:bg-blue-200 w-full">Opción 8</button></li>
+                </ul>
             </div>
-            <div class="w-1/3 bg-gray-100 rounded-lg opacity-70 m-4 p-4 flex flex-col items-center justify-center shadow-2xl">
-                <p class="text-lg font-semibold mb-4 text-center">Formulario para normalizar <br>morosidad de patronos CCSS</p>
-                
-                <a href="../src/docs/morosidad_patronal.zip" download="" class="w-3/4 bg-purple-600 text-white text-xl py-2 px-4 rounded-lg hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 text-center block">
-                    Obtener
-                </a>
+            <!-- Contenedor de elementos descargables con scroll -->
+            <div class="flex-1 bg-gradient-to-br from-cyanfc to-purplefc rounded-r-lg shadow-xl px-3 h-full overflow-y-auto">
+                <!-- Contenedor interno con altura fija y scroll -->
+                <div class="w-full h-[500px] overflow-y-auto py-4">
+                    <!-- Primera fila de 3 elementos -->
+                    <div class="flex justify-center mb-4">
+                        <div class="w-1/3 bg-gray-100 rounded-lg opacity-70 m-4 p-4 flex flex-col items-center justify-center shadow-2xl">
+                            <p class="text-lg font-semibold mb-4 text-center">Formulario para denuncias de la CCSS</p>
+                            <a href="https://www.ccss.sa.cr/tramites" target="_blank" class="w-3/4 bg-purple-600 text-white text-xl py-2 px-4 rounded-lg hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 text-center block">Obtener</a>
+                        </div>
+                        <div class="w-1/3 bg-gray-100 rounded-lg opacity-70 m-4 p-4 flex flex-col items-center justify-center shadow-2xl">
+                            <p class="text-lg font-semibold mb-4 text-center">Formulario para normalizar <br>morosidad de patronos CCSS</p>
+                            <a href="../src/docs/morosidad_patronal.zip" download="" class="w-3/4 bg-purple-600 text-white text-xl py-2 px-4 rounded-lg hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 text-center block">Obtener</a>
+                        </div>
+                        <div class="w-1/3 bg-gray-100 rounded-lg opacity-70 m-4 p-4 flex flex-col items-center justify-center shadow-2xl">
+                            <p class="text-lg font-semibold mb-4 text-center">Formulario para solicitar <br>pensiones CCSS</p>
+                            <a href="../src/docs/solicitud de pensión por vejez del Seguro de Invalidez Vejez y Muerte.zip" download="" class="w-3/4 bg-purple-600 text-white text-xl py-2 px-4 rounded-lg hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 text-center block">Obtener</a>
+                        </div>
+                    </div>
+                    <!-- Segunda fila de 3 elementos -->
+                    <div class="flex justify-center mb-4">
+                        <div class="w-1/3 bg-gray-100 rounded-lg opacity-70 m-4 p-4 flex flex-col items-center justify-center shadow-2xl">
+                            <p class="text-lg font-semibold mb-4 text-center">Certificación de discapacidad a solicitantes pensionados por invalidez para el beneficio del bono familiar de vivienda y medio, CCSS</p>
+                            <a href="../src/docs/Certificación de discapacidad a solicitantes pensionados por invalidez para el beneficio del bono familiar de vivienda y medio.pdf" class="w-3/4 bg-purple-600 text-white text-xl py-2 px-4 rounded-lg hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 text-center block">Obtener</a>
+                        </div>
+                        <div class="w-1/3 bg-gray-100 rounded-lg opacity-70 m-4 p-4 flex flex-col items-center justify-center shadow-2xl">
+                            <p class="text-lg font-semibold mb-4 text-center">Valoración médica y calificación del estado de discapacidad a solicitantes del beneficio del bono familiar de vivienda y medio, CCSS</p>
+                            <a href="../src/docs/Valoración médica y calificación del estado de discapacidad a solicitantes del beneficio del bono familiar de vivienda y medio.pdf" class="w-3/4 bg-purple-600 text-white text-xl py-2 px-4 rounded-lg hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 text-center block">Obtener</a>
+                        </div>
+                        <div class="w-1/3 bg-gray-100 rounded-lg opacity-70 m-4 p-4 flex flex-col items-center justify-center shadow-2xl">
+                            <p class="text-lg font-semibold mb-4 text-center">Afiliación de Asegurado Voluntario, CCSS</p>
+                            <a href="../src/docs/solicitud de aseguración voluntaria.pdf" class="w-3/4 bg-purple-600 text-white text-xl py-2 px-4 rounded-lg hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 text-center block">Obtener</a>
+                        </div>
+                    </div>
+                    <!-- Tercera fila de 3 elementos -->
+                    <div class="flex justify-center mb-4">
+                        <div class="w-1/3 bg-gray-100 rounded-lg opacity-70 m-4 p-4 flex flex-col items-center justify-center shadow-2xl">
+                            <p class="text-lg font-semibold mb-4 text-center">Afiliación de Trabajador Independiente, CCSS</p>
+                            <a href="../src/docs/solicitud trabajador indpendiente.pdf" class="w-3/4 bg-purple-600 text-white text-xl py-2 px-4 rounded-lg hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 text-center block">Obtener</a>
+                        </div>
+                        <div class="w-1/3 bg-gray-100 rounded-lg opacity-70 m-4 p-4 flex flex-col items-center justify-center shadow-2xl">
+                            <p class="text-lg font-semibold mb-4 text-center">Formulario Extra 2</p>
+                            <a href="#" class="w-3/4 bg-purple-600 text-white text-xl py-2 px-4 rounded-lg hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 text-center block">Obtener</a>
+                        </div>
+                        <div class="w-1/3 bg-gray-100 rounded-lg opacity-70 m-4 p-4 flex flex-col items-center justify-center shadow-2xl">
+                            <p class="text-lg font-semibold mb-4 text-center">Formulario Extra 3</p>
+                            <a href="#" class="w-3/4 bg-purple-600 text-white text-xl py-2 px-4 rounded-lg hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 text-center block">Obtener</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <footer class="bg-bluefc text-white flex items-center justify-center h-16">
-        <div class="w-full items-center">        
-            <p class="w-1/2 text-center text-base ml-80">
-            Fast Claim 2024 &copy; 
-        </p></div>
+    </main>
+
+    <!-- Footer fijo -->
+    <footer class="bg-bluefc text-white fixed bottom-0 w-full flex items-center justify-center h-16">
+        <div class="w-full flex justify-center">        
+            <p class="text-center text-base">
+                Fast Claim 2024 &copy;
+            </p>
+        </div>
     </footer>
 </body>
 </html>
+
