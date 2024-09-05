@@ -106,21 +106,19 @@
     </div>
     </div>
     
-    <!--Seccion final del index-->
-    <div id="index1" class="h-72 relative mb-8 mt-10">
-        <div class="h-5/6 overflow-hidden flex items-center justify-center relative">
-            <!-- Imagen con brillo ajustado -->
-            <img class="filter brightness-50 w-full h-full object-cover" src="img/parallax.jpg" alt="">
-            
-            <!-- Texto superpuesto -->
-            <p class="absolute inset-0 flex items-center justify-start text-white text-5xl font-extrabold px-8">
-                Sobre Nosotros
-            </p>
-        </div>
+    <div id="index1" class="h-72 relative mb-8 mt-10 overflow-hidden group">
+        <!-- Imagen con efecto de zoom al hacer hover -->
+        <img class="filter brightness-50 w-full h-full object-cover transform transition-transform duration-500 ease-in-out group-hover:scale-105" src="img/parallax.jpg" alt="">
+
+        <!-- Texto superpuesto -->
+        <p class="absolute inset-0 flex items-center justify-start text-white text-5xl font-extrabold px-8">
+            Sobre Nosotros 
+        </p>
+        <p class="absolute inset-0 flex items-end justify-start text-white text-2xl font-extrathin px-10 mb-4">Click para saber más</p>
     </div>
     
     <!-- Contenedor para subtítulo y párrafo -->
-    <div  id="textIndex1" class="text-center max-w-3xl mx-auto mb-12 hidden">
+    <div id="textIndex1" class="text-center max-w-3xl mx-auto mb-12 hidden">
         <p class="text-2xl font-bold mb-4">Asistente en la Presentación de Denuncias</p>
         <p class="text-xl leading-relaxed">
             Fast-Claim es una herramienta diseñada para brindar asistencia a las personas que necesitan presentar denuncias ante instituciones públicas en Costa Rica. 
@@ -132,20 +130,16 @@
         </p>
     </div>
     
-
-    <div id="index2" class="h-72 relative mb-8">
-        <div class="h-5/6 overflow-hidden flex items-center justify-center relative">
-            <!-- Imagen con brillo ajustado -->
-            <img class="filter brightness-50 w-full h-full object-cover" src="img/AyA-3.jpg" alt="">
-            
-            <!-- Texto superpuesto -->
-            <p class="absolute inset-0 flex items-center justify-start text-white text-5xl font-extrabold px-8">
-                Te brindamos asistencia
-            </p>
-        </div>
+    <!-- Repite el mismo patrón para las otras imágenes -->
+    <div id="index2" class="h-72 relative mb-8 overflow-hidden group">
+        <img class="filter brightness-50 w-full h-full object-cover transform transition-transform duration-500 ease-in-out group-hover:scale-105" src="img/AyA-3.jpg" alt="">
+        <p class="absolute inset-0 flex items-center justify-start text-white text-5xl font-extrabold px-8">
+            Te brindamos asistencia
+        </p>
+        <p class="absolute inset-0 flex items-end justify-start text-white text-2xl font-extrathin px-10 mb-4">Click para saber más</p>
     </div>
     
-    <!-- Contenedor para subtitulo y párrafo -->
+    <!-- Contenedor para subtítulo y párrafo -->
     <div id="textIndex2" class="text-center max-w-3xl mx-auto mb-12 hidden">
         <p class="text-2xl font-bold mb-4">El Problema de la Desinformación en los Procesos Legales</p>
         <p class="text-xl leading-relaxed">
@@ -159,19 +153,15 @@
         </p>
     </div>
     
-    <div id="index3" class="h-72 relative mb-8">
-        <div class="h-5/6 overflow-hidden flex items-center justify-center relative">
-            <!-- Imagen con brillo ajustado -->
-            <img class="filter brightness-50 w-full h-full object-cover" src="img/ccssedificio.jpg" alt="">
-            
-            <!-- Texto superpuesto -->
-            <p class="absolute inset-0 flex items-center justify-start text-white text-5xl font-extrabold px-8">
-                Información centralizada
-            </p>
-        </div>
+    <div id="index3" class="h-72 relative mb-8 overflow-hidden group">
+        <img class="filter brightness-50 w-full h-full object-cover transform transition-transform duration-500 ease-in-out group-hover:scale-105" src="img/ccssedificio.jpg" alt="">
+        <p class="absolute inset-0 flex items-center justify-start text-white text-5xl font-extrabold px-8">
+            Información centralizada
+        </p>
+        <p class="absolute inset-0 flex items-end justify-start text-white text-2xl font-extrathin px-10 mb-4">Click para saber más</p>
     </div>
     
-    <!-- Contenedor para subtitulo y párrafo -->
+    <!-- Contenedor para subtítulo y párrafo -->
     <div id="textIndex3" class="text-center max-w-3xl mx-auto mb-12 hidden">
         <p class="text-2xl font-bold mb-4">Centralización de Información Legal y Atención Personalizada</p>
         <p class="text-xl leading-relaxed">
@@ -185,8 +175,6 @@
             asegurando que reciban la orientación adecuada en el momento que más lo necesitan.
         </p>
     </div>
-    
-
 
 
 

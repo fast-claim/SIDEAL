@@ -1,16 +1,14 @@
 $(document).ready(function(){
     $("#index1").on('click',function(){
-        $("#textIndex1").slideToggle(1000);
+        $("#textIndex1").slideToggle(700);
     })
     $("#index2").on('click',function(){
-        $("#textIndex2").slideToggle(1000);
+        $("#textIndex2").slideToggle(700);
     })
     $("#index3").on('click',function(){
-        $("#textIndex3").slideToggle(1000);
+        $("#textIndex3").slideToggle(700);
     })
-
-
-
+    
 
 
 
