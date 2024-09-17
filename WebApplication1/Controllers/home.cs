@@ -15,7 +15,7 @@ namespace WebApplication1.Controllers
         public async Task<IActionResult> GetAIBasedResult(string SearchText)
         {
             try {
-                string ApiKey = "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";
+                string ApiKey = "sk-BDEP0Fk8k2BABz4dDkncpmmtFI4li0B11z3aCpgoxvT3BlbkFJJXu5Fi4J_hS0gY8OxBbwUvCD-j_pbPMA7ZsFET2bkA";
                 string answer = string.Empty;
 
                 var openai = new OpenAIAPI(ApiKey);
