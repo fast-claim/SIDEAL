@@ -1,31 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head> 
-<body>
+
 <?php
-
-
 
 require '../../../vendor/autoload.php';
 use Dotenv\Dotenv;
 
-// Cargar las variables de entorno desde el archivo .env
-
-$dotenv = new Dotenv(__DIR__ , "/../../../");
+// Cargar las variables de entorno desde el archivo .env utilizando el método correcto
+$dotenv = Dotenv::createImmutable(__DIR__ );
 $dotenv->load();
+
 function OpenConnection()
 {
     // Obtener variables de entorno para la conexión a la base de datos
-    $serverName = "tcp:" . (string) getenv('DB_SERVER'); // Forzar el uso de TCP/IP con prefijo 'tcp:'
-    $database = (string) getenv('DB_DATABASE');
-    $username = (string) getenv('DB_USERNAME');
-    $password = (string) getenv('DB_PASSWORD');
+    $serverName = $_ENV['DB_SERVER'];
+    $database = $_ENV['DB_DATABASE'];
+    $username = $_ENV['DB_USERNAME'];
+    $password = $_ENV['DB_PASSWORD'];
 
-    echo "Intentando conectar a SQL Server en $serverName con la base de datos $database usando el usuario $username.<br>";
 
     // Configurar las opciones de conexión
     $connectionOptions = array(
@@ -47,10 +37,31 @@ function OpenConnection()
     return $conn; // Devolver la conexión para ser usada fuera de la función
 }
 
+
+
+
 // Llamar a la función para abrir la conexión
 $conn = OpenConnection();
-?>
 
-</body>
-</html>
+$sql = "SELECT * FROM articulos";
+$stmt = sqlsrv_query($conn, $sql);
+
+if ($stmt === false) {
+    http_response_code(500);
+    die(json_encode(array("error" => sqlsrv_errors())));
+}
+
+$data = array();
+while ($row = sqlsrv_fetch_array($stmt, SQLSRV_FETCH_ASSOC)) {
+    $data[] = $row;
+}
+
+// Devolver los datos en formato JSON
+header('Content-Type: application/json');
+echo json_encode($data);
+
+// Cerrar la conexión
+sqlsrv_free_stmt($stmt);
+sqlsrv_close($conn);
+?>
 
