@@ -4,175 +4,108 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Articulos</title>
+    <script type="module" src="js/database.js"></script>
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body class="flex flex-col min-h-screen">
   <header class="bg-bluefc"> 
     <nav class="h-16 flex justify-between items-center w-[92%] mx-auto">
-   <div class="ml-16 text-white text-3xl font-semibold hover:text-gray-500 cursor-pointer"><a href="index.html">Fast Claim</a></div>
-   <div class="">
-       <ul class="flex items-center gap-9">
-           <li>
-               <a class="text-white text-lg hover:text-gray-500 h-20 " href="chatbot.html">ChatBot</a>
-           </li>
-           <li>
-               <a class="text-white text-lg hover:text-gray-500 h-20" href="formularios.html">Formularios</a>
-           </li>
-           <li>
-               <a class="text-white text-lg hover:text-gray-500 h-20" href="articles.html">Articulos</a>
-           </li>
-           <li>
-               <a class="text-white text-lg hover:text-gray-500 h-20" href="documentos.html">Documentos</a>
-           </li>
-           <li>
-               <a class="text-white text-lg hover:text-gray-500 h-20" href="contactos.html">Contactos</a>
-           </li>
-           <li>
-               <a class="text-white text-lg hover:text-gray-500 h-20 mr-20" href="sugerencias.html">Sugerencias</a>
-           </li>
-       </ul>
-   </div>
+        <div class="ml-16 text-white text-3xl font-semibold hover:text-gray-500 cursor-pointer">
+          <a href="index.html">Fast Claim</a>
+        </div>
+        <div>
+            <ul class="flex items-center gap-9">
+                <li><a class="text-white text-lg hover:text-gray-500 h-20" href="chatbot.html">ChatBot</a></li>
+                <li><a class="text-white text-lg hover:text-gray-500 h-20" href="formularios.html">Formularios</a></li>
+                <li><a class="text-white text-lg hover:text-gray-500 h-20" href="articles.html">Articulos</a></li>
+                <li><a class="text-white text-lg hover:text-gray-500 h-20" href="documentos.html">Documentos</a></li>
+                <li><a class="text-white text-lg hover:text-gray-500 h-20" href="contactos.html">Contactos</a></li>
+                <li><a class="text-white text-lg hover:text-gray-500 h-20 mr-20" href="sugerencias.html">Sugerencias</a></li>
+            </ul>
+        </div>
     </nav>
-       </header>
+  </header>
 
-    <div class="p-20 max-w-full justify-center bg-white shadow-lg flex items-center space-x-4">
-       
-        <div class="bg-bluefc rounded-xl w-72 h-24 text-center">
-          <div class="text-xl font-medium text-white mt-2">--Articulos mas relevantes--</div>
-          <p class="text-slate-500 text-white ">¿Quieres saber mas?</p>
-          <button class=" space-x-4 py-1 text-sm text-white font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-blue-900 hover:border-black focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">Ver mas noticias</button>
-        </div>
+  <!-- Contenido principal -->
+  <main class="flex-grow p-20 max-w-full justify-center bg-white shadow-lg flex items-center space-x-4">
+    <div class="bg-bluefc rounded-xl w-72 h-24 text-center">
+        <div class="text-xl font-medium text-white mt-2">--Articulos mas relevantes--</div>
+        <p class="text-white">¿Quieres saber más?</p>
+        <button class="py-1 text-sm text-white font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-blue-900 hover:border-black focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">Ver más noticias</button>
+    </div>
+  </main>
+
+  <!-- Artículos -->
+  <div class="flex justify-center space-x-6 p-10">
+    <!-- Artículo 1 -->
+    <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+      <a href="#"><img class="rounded-t-lg" src="img/AYA.jpg" alt="" /></a>
+      <div class="p-5">
+        <a href="#"><h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">CCSS</h5></a>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Problemas que enfrenta la CCSS</p>
+        <a href="article.html" onclick="redirect(1)" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-bluefc rounded-lg hover:bg-blue-800">Leer</a>
       </div>
-
-
-
-
-
-
-    <div class="flex">
-        <div class="p-3 max-w-sm justify-center bg-white  shadow-lg flex items-center space-x-4">
-        </div>
-    <div class="p-50 max-w-full bg-white rounded-xl shadow-lg items-center space-x-4">
-        <div class="shrink-0">
-          <img class="size-12" src="img/AYA.jpg" alt="AyA">
-        </div>
-        <div>
-          <div class="text-xl font-medium text-black">Titular Articulo1</div>
-          <p class="text-slate-500">Info articulo1</p>
-        </div>
-      </div>
-       
-      <div class="p-5 max-w-sm justify-center bg-white  shadow-lg flex items-center space-x-4">
-      </div>
-
-
-
-      <div class="p-50 max-w-sm bg-white rounded-xl shadow-lg items-center space-x-4">
-        <div class="shrink-0">
-          <img class="size-12" src="img/AYA.jpg" alt="AyA">
-        </div>
-        <div>
-          <div class="text-xl font-medium text-black">Titular Articulo2</div>
-          <p class="text-slate-500">Info articulo2</p>
-        </div>
-      </div>
-      <div class="p-2 max-w-sm justify-center bg-white  shadow-lg flex items-center space-x-4">
     </div>
 
-       <div class="p-50 max-w-sm bg-white rounded-xl shadow-lg relative items-center space-x-4">
-        <div class="shrink-0">
-          <img class="size-12" src="img/AYA.jpg" alt="AyA">
-        </div>
-        <div>
-          <div class="text-xl font-medium text-black">Titular Articulo3</div>
-          <p class="text-slate-500">Info articulo3</p>
-        </div>
+    <!-- Artículo 2 -->
+    <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+      <a href="#"><img class="rounded-t-lg" src="img/AYA.jpg" alt="" /></a>
+      <div class="p-5">
+        <a href="#"><h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">AyA</h5></a>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Problemas que enfrenta el AyA</p>
+        <a href="article.html" onclick="redirect(2)" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-bluefc rounded-lg hover:bg-blue-800">Leer</a>
       </div>
-      <div class="p-3 max-w-sm justify-center bg-white  shadow-lg flex items-center space-x-4">
     </div>
-    </div>
-     
-    <div class="p-10 max-w-full justify-center bg-white  shadow-lg flex items-center space-x-4">
-       
-        <div>
-          <div class="text-xl font-medium text-white">--Articulos mas nuevos--</div>
-        </div>
+
+    <!-- Artículo 3 -->
+    <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+      <a href="#"><img class="rounded-t-lg" src="img/AYA.jpg" alt="" /></a>
+      <div class="p-5">
+        <a href="#"><h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">MTSS</h5></a>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Problemas que enfrenta el MTSS</p>
+        <a href="javascript:void(0)" onclick="redirect(3)" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-bluefc rounded-lg hover:bg-blue-800">Leer</a>
       </div>
+    </div>
+  </div>
 
+  <!-- Artículo 4 -->
+  <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mx-auto">
+    <a href="#"><img class="rounded-t-lg" src="img/AYA.jpg" alt="" /></a>
+    <div class="p-5">
+      <a href="#"><h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">CNFL</h5></a>
+      <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Problemas que enfrenta la CNFL</p>
+      <a href="javascript:void(0)" onclick="redirect(4)" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-bluefc rounded-lg hover:bg-blue-800">Leer</a>
+    </div>
+  </div>
 
+  <!-- Redes sociales -->
+  <div class="flex justify-center space-x-6 p-10">
+    <div class="bg-white text-white flex items-center justify-center h-20">
+      <div class="flex justify-between items-center">
+        <div class="w-8 h-8 ml-12 bg-bluefc rounded-lg cursor-pointer"><img src="img/svg/instagram.svg" alt="instagram" class="h-8 w-8"></div>
+        <div class="w-8 h-8 ml-12 bg-bluefc rounded-lg cursor-pointer"><img src="img/svg/x.svg" alt="x/twitter" class="h-8 w-8"></div>
+        <div class="w-8 h-8 ml-12 bg-bluefc rounded-lg cursor-pointer"><img src="img/svg/email.svg" alt="email" class="h-8 w-8"></div>
+        <div class="w-8 h-8 ml-12 bg-bluefc rounded-lg cursor-pointer"><img src="img/svg/facebook.svg" alt="facebook" class="h-8 w-8"></div>
+      </div>
+    </div>
+  </div>
 
+  <!-- Footer -->
+  <footer class="bg-bluefc text-white flex items-center justify-center h-16">
+    <div class="w-full flex items-center justify-center">
+      <p class="text-center text-base">
+        Fast Claim 2024 &copy;
+      </p>
+    </div>
+  </footer>
 
-
-    <div class="flex">
-        <div class="p-3 max-w-sm justify-center bg-white  shadow-lg flex items-center space-x-4">
-        </div>
-          <div class="p-50 max-w-sm bg-white  shadow-lg  space-x-4">
-            <div class="shrink-0">
-              <img class="size-12" src="img/AYA.jpg" alt="AyA">
-            </div>
-            <div>
-              <div class="text-xl font-medium text-black">Titular Articulo4</div>
-              <p class="text-slate-500">Info articulo4</p>
-            </div>
-          </div>
-          <div class="p-2 max-w-sm justify-center bg-white  shadow-lg flex items-center space-x-4">
-        </div>
-           <div class="p-50 max-w-sm bg-white  shadow-lg relative items-center space-x-4">
-            <div class="shrink-0">
-              <img class="size-12" src="img/AYA.jpg" alt="AyA">
-            </div>
-            <div>
-              <div class="text-xl font-medium text-black">Titular Articulo5</div>
-              <p class="text-slate-500">Info articulo5</p>
-            </div>
-          </div>
-          <div class="p-5 max-w-sm justify-center bg-white  shadow-lg flex items-center space-x-4">
-        </div>
-          <div class="p-50 max-w-full bg-white  shadow-lg items-center space-x-4">
-            <div class="shrink-0">
-              <img class="size-12" src="img/AYA.jpg" alt="AyA">
-            </div>
-            <div>
-              <div class="text-xl font-medium text-black">Titular Articulo6</div>
-              <p class="text-slate-500">Info articulo6</p>
-            </div>
-          </div>
-          <div class="p-3 max-w-sm justify-center bg-white  shadow-lg flex items-center space-x-4">
-        </div>
-        </div>
-         
-        <div class="p-20 max-w-full justify-center bg-white  shadow-lg flex items-center space-x-4">
-       
-            <div class="bg-bluefc rounded-xl w-72 h-24 text-center">
-              <div class="text-xl font-medium text-white mt-2">--Has llegado al final--</div>
-              <p class="text-slate-500 text-white">¿Quieres saber mas?</p>
-            
-            <button class=" space-x-4 py-1 text-sm text-white font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-bluefc hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">Ver mas noticias</button>
-         
-            </div>
-          </div>
-    
-
-
-          <div class="bg-white text-white flex items-center justify-center h-20 ">
-            <p class="w-1/2 flex justify-between items-center px-20">
-                <!-- Asegúrate de que la ruta de tus imágenes sea correcta -->
-                <div class="w-8 h-8 justify-between ml-12 bg-bluefc rounded-lg cursor-pointer"><img src="img/svg/instagram.svg" alt="instagram" class="h-8 w-8"></div>
-                <div class="w-8 h-8 justify-between ml-12 bg-bluefc rounded-lg cursor-pointer"><img src="img/svg/x.svg" alt="x/twitter" class="h-8 w-8"></div>
-                <div class="w-8 h-8 justify-between ml-12 bg-bluefc rounded-lg cursor-pointer"><img src="img/svg/email.svg" alt="email" class="h-8 w-8"></div>
-                <div class="w-8 h-8 justify-between ml-12 mr-0 bg-bluefc rounded-lg cursor-pointer"><img src="img/svg/facebook.svg" alt="facebook" class="h-8 w-8"></div>
-            </p>
-            </div>
-        <footer class="bg-bluefc text-white flex items-center justify-center h-16">
-            <div class="w-full items-center">        
-                <p class="w-1/2 text-center text-base ml-80">
-                Fast Claim 2024 &copy; 
-            </p></div>
-        </footer>
-    
-    
- 
-
-
+  <script>
+    function redirect(id) {
+      // Almacena el id en el localStorage
+      localStorage.setItem('articleId', id);
+      // Redirige a article.html
+      window.location.href = 'article.html';
+    }
+  </script>
 </body>
 </html>
