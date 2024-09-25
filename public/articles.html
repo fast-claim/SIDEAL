@@ -10,7 +10,9 @@
 <body class="flex flex-col min-h-screen">
   <header class="bg-bluefc"> 
     <nav class="h-16 flex justify-between items-center w-[92%] mx-auto">
-        <div class="ml-16 text-white text-3xl font-semibold hover:text-gray-500 cursor-pointer"><a href="index.html">Fast Claim</a></div>
+        <div class="ml-16 text-white text-3xl font-semibold hover:text-gray-500 cursor-pointer">
+          <a href="index.html">Fast Claim</a>
+        </div>
         <div>
             <ul class="flex items-center gap-9">
                 <li><a class="text-white text-lg hover:text-gray-500 h-20" href="chatbot.html">ChatBot</a></li>
@@ -28,55 +30,64 @@
   <main class="flex-grow p-20 max-w-full justify-center bg-white shadow-lg flex items-center space-x-4">
     <div class="bg-bluefc rounded-xl w-72 h-24 text-center">
         <div class="text-xl font-medium text-white mt-2">--Articulos mas relevantes--</div>
-        <p class="text-slate-500 text-white">¿Quieres saber mas?</p>
-        <button class="space-x-4 py-1 text-sm text-white font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-blue-900 hover:border-black focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">Ver mas noticias</button>
+        <p class="text-white">¿Quieres saber más?</p>
+        <button class="py-1 text-sm text-white font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-blue-900 hover:border-black focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">Ver más noticias</button>
     </div>
   </main>
 
   <!-- Artículos -->
   <div class="flex justify-center space-x-6 p-10">
+    <!-- Artículo 1 -->
     <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
       <a href="#"><img class="rounded-t-lg" src="img/AYA.jpg" alt="" /></a>
       <div class="p-5">
-        <a href=""><h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">AyA</h5></a>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Problemas que enfrenta el AyA</p>
-        <a href="article.html" onclick="redirect(1)" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-bluefc rounded-lg hover:bg-blue-800">Leer
-            
-        </a>
+        <a href="#"><h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">CCSS</h5></a>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Problemas que enfrenta la CCSS</p>
+        <a href="article.html" onclick="redirect(1)" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-bluefc rounded-lg hover:bg-blue-800">Leer</a>
       </div>
     </div>
 
+    <!-- Artículo 2 -->
     <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
       <a href="#"><img class="rounded-t-lg" src="img/AYA.jpg" alt="" /></a>
       <div class="p-5">
-        <a href="#"><h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">CNFL</h5></a>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Problemas que enfrenta la CNFL</p>
-        <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-bluefc rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Leer
-           
-        </a>
+        <a href="#"><h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">AyA</h5></a>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Problemas que enfrenta el AyA</p>
+        <a href="article.html" onclick="redirect(2)" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-bluefc rounded-lg hover:bg-blue-800">Leer</a>
       </div>
     </div>
 
+    <!-- Artículo 3 -->
     <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
       <a href="#"><img class="rounded-t-lg" src="img/AYA.jpg" alt="" /></a>
       <div class="p-5">
-        <a href=""><h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">AyA</h5></a>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Problemas que enfrenta el AyA</p>
-        <a href="javascript:void(0)" onclick="redirect(3)" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-bluefc rounded-lg hover:bg-blue-800">Leer
-            
-        </a>
+        <a href="#"><h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">MTSS</h5></a>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Problemas que enfrenta el MTSS</p>
+        <a href="javascript:void(0)" onclick="redirect(3)" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-bluefc rounded-lg hover:bg-blue-800">Leer</a>
       </div>
     </div>
   </div>
 
+  <!-- Artículo 4 -->
+  <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mx-auto">
+    <a href="#"><img class="rounded-t-lg" src="img/AYA.jpg" alt="" /></a>
+    <div class="p-5">
+      <a href="#"><h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">CNFL</h5></a>
+      <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Problemas que enfrenta la CNFL</p>
+      <a href="javascript:void(0)" onclick="redirect(4)" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-bluefc rounded-lg hover:bg-blue-800">Leer</a>
+    </div>
+  </div>
+
   <!-- Redes sociales -->
-  <div class="bg-white text-white flex items-center justify-center h-20">
-    <p class="flex justify-between items-center px-20">
-      <div class="w-8 h-8 ml-12 bg-bluefc rounded-lg cursor-pointer"><img src="img/svg/instagram.svg" alt="instagram" class="h-8 w-8"></div>
-      <div class="w-8 h-8 ml-12 bg-bluefc rounded-lg cursor-pointer"><img src="img/svg/x.svg" alt="x/twitter" class="h-8 w-8"></div>
-      <div class="w-8 h-8 ml-12 bg-bluefc rounded-lg cursor-pointer"><img src="img/svg/email.svg" alt="email" class="h-8 w-8"></div>
-      <div class="w-8 h-8 ml-12 bg-bluefc rounded-lg cursor-pointer"><img src="img/svg/facebook.svg" alt="facebook" class="h-8 w-8"></div>
-    </p>
+  <div class="flex justify-center space-x-6 p-10">
+    <div class="bg-white text-white flex items-center justify-center h-20">
+      <div class="flex justify-between items-center">
+        <div class="w-8 h-8 ml-12 bg-bluefc rounded-lg cursor-pointer"><img src="img/svg/instagram.svg" alt="instagram" class="h-8 w-8"></div>
+        <div class="w-8 h-8 ml-12 bg-bluefc rounded-lg cursor-pointer"><img src="img/svg/x.svg" alt="x/twitter" class="h-8 w-8"></div>
+        <div class="w-8 h-8 ml-12 bg-bluefc rounded-lg cursor-pointer"><img src="img/svg/email.svg" alt="email" class="h-8 w-8"></div>
+        <div class="w-8 h-8 ml-12 bg-bluefc rounded-lg cursor-pointer"><img src="img/svg/facebook.svg" alt="facebook" class="h-8 w-8"></div>
+      </div>
+    </div>
   </div>
 
   <!-- Footer -->
@@ -87,8 +98,14 @@
       </p>
     </div>
   </footer>
-  <script type="module" src="js/sendId.js"></script>
-  <script type="module" src="js/loadData.js"></script>
-</body>
 
+  <script>
+    function redirect(id) {
+      // Almacena el id en el localStorage
+      localStorage.setItem('articleId', id);
+      // Redirige a article.html
+      window.location.href = 'article.html';
+    }
+  </script>
+</body>
 </html>

@@ -50,5 +50,22 @@
     </footer>
 
 </body>
-<script type="module"src="js/loadData.js"></script>
+<script >
+    // Obtener el id desde localStorage
+    const articleId = localStorage.getItem('articleId');
+
+    // Ahora podemos usar este id para cargar el JSON y mostrar el contenido adecuado
+    fetch('js/dailyData/articles.json')
+    .then(response => response.json())
+    .then(articleData => {
+        const article = articleData.find(item => item.id === parseInt(articleId));
+        if (article) {
+            // Actualiza el contenido de la página
+            document.getElementById('h1').innerHTML = article.h1;
+            document.getElementById('content').innerHTML = article.content;
+        } else {
+            document.getElementById('content').innerHTML = "<div>Error: Artículo no encontrado</div>";
+        }
+    });
+</script>
 </html>
