@@ -6,5 +6,10 @@ function setNum(id) {
     num = id;
 }
 
-// Exportamos tanto num como setNum para poder usarlos en otros archivos
-export { num, setNum };
+// Función que devuelve el valor actualizado de num
+function getNum() {
+    return num;
+}
+
+// Exportamos las funciones
+export { setNum, getNum };
