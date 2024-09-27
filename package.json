@@ -12,5 +12,8 @@
   "dependencies": {
     "jquery": "^3.7.1",
     "tailwind": "^4.0.0"
+  },
+  "devDependencies": {
+    "@iconify/tailwind": "^1.1.3"
   }
 }
