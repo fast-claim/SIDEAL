@@ -1,5 +1,8 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using dotenv.net;
+using dotenv.net.Utilities;
+using System;
 using System.Threading.Tasks;
 using System.Net.Http;
 using System.Text;
@@ -16,14 +19,21 @@ namespace WebApplication1.Controllers
         {
             try
             {
-                string ApiKey = "sk-BDEP0Fk8k2BABz4dDkncpmmtFI4li0B11z3aCpgoxvT3BlbkFJJXu5Fi4J_hS0gY8OxBbwUvCD-j_pbPMA7ZsFET2bkA";
+                
+                
+
+
+                
+                string apiKey = "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";
+
+
                 string model = "gpt-3.5-turbo"; // Modelo de chat
                 string answer = string.Empty;
 
                 // Crear el cliente HttpClient
                 using (var httpClient = new HttpClient())
                 {
-                    httpClient.DefaultRequestHeaders.Add("Authorization", $"Bearer {ApiKey}");
+                    httpClient.DefaultRequestHeaders.Add("Authorization", $"Bearer {apiKey}");
 
                     var requestBody = new
                     {

@@ -1,14 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Documentos\\Programaci\u00F3n\\fast-claim\\fastclaim\\",
+  "WorkspaceRootPath": "D:\\Documentos\\Programaci\u00F3n\\SIDEAL\\SIDEAL\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7E5BC195-7253-477B-AA31-B2535BF5413A}|WebApplication1\\WebApplication1.csproj|d:\\documentos\\programaci\u00F3n\\fast-claim\\fastclaim\\webapplication1\\controllers\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7E5BC195-7253-477B-AA31-B2535BF5413A}|WebApplication1\\WebApplication1.csproj|d:\\documentos\\programaci\u00F3n\\sideal\\sideal\\webapplication1\\controllers\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7E5BC195-7253-477B-AA31-B2535BF5413A}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E5BC195-7253-477B-AA31-B2535BF5413A}|WebApplication1\\WebApplication1.csproj|d:\\documentos\\programaci\u00F3n\\fast-claim\\fastclaim\\webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E5BC195-7253-477B-AA31-B2535BF5413A}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7E5BC195-7253-477B-AA31-B2535BF5413A}|WebApplication1\\WebApplication1.csproj|d:\\documentos\\programaci\u00F3n\\sideal\\sideal\\webapplication1\\webapplication1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{7E5BC195-7253-477B-AA31-B2535BF5413A}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\webapplication1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E5BC195-7253-477B-AA31-B2535BF5413A}|WebApplication1\\WebApplication1.csproj|d:\\documentos\\programaci\u00F3n\\sideal\\sideal\\webapplication1\\.env||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{7E5BC195-7253-477B-AA31-B2535BF5413A}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\.env||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,28 +30,42 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "home.cs",
-              "DocumentMoniker": "D:\\Documentos\\Programaci\u00F3n\\fast-claim\\fastclaim\\WebApplication1\\Controllers\\home.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\home.cs",
-              "ToolTip": "D:\\Documentos\\Programaci\u00F3n\\fast-claim\\fastclaim\\WebApplication1\\Controllers\\home.cs",
-              "RelativeToolTip": "WebApplication1\\Controllers\\home.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAowEAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-17T02:28:03.48Z",
+              "DocumentIndex": 2,
+              "Title": ".env",
+              "DocumentMoniker": "D:\\Documentos\\Programaci\u00F3n\\SIDEAL\\SIDEAL\\WebApplication1\\.env",
+              "RelativeDocumentMoniker": "WebApplication1\\.env",
+              "ToolTip": "D:\\Documentos\\Programaci\u00F3n\\SIDEAL\\SIDEAL\\WebApplication1\\.env",
+              "RelativeToolTip": "WebApplication1\\.env",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAACTAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-10-03T03:29:41.388Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Documentos\\Programaci\u00F3n\\fast-claim\\fastclaim\\WebApplication1\\Program.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Program.cs",
-              "ToolTip": "D:\\Documentos\\Programaci\u00F3n\\fast-claim\\fastclaim\\WebApplication1\\Program.cs",
-              "RelativeToolTip": "WebApplication1\\Program.cs",
+              "Title": "WebApplication1",
+              "DocumentMoniker": "D:\\Documentos\\Programaci\u00F3n\\SIDEAL\\SIDEAL\\WebApplication1\\WebApplication1.csproj",
+              "RelativeDocumentMoniker": "WebApplication1\\WebApplication1.csproj",
+              "ToolTip": "D:\\Documentos\\Programaci\u00F3n\\SIDEAL\\SIDEAL\\WebApplication1\\WebApplication1.csproj",
+              "RelativeToolTip": "WebApplication1\\WebApplication1.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-10-03T03:15:37.859Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "home.cs",
+              "DocumentMoniker": "D:\\Documentos\\Programaci\u00F3n\\SIDEAL\\SIDEAL\\WebApplication1\\Controllers\\home.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\home.cs",
+              "ToolTip": "D:\\Documentos\\Programaci\u00F3n\\SIDEAL\\SIDEAL\\WebApplication1\\Controllers\\home.cs*",
+              "RelativeToolTip": "WebApplication1\\Controllers\\home.cs*",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAB4AAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-17T02:27:59.438Z"
+              "WhenOpened": "2024-10-03T02:59:50.724Z",
+              "EditorCaption": ""
             }
           ]
         }
