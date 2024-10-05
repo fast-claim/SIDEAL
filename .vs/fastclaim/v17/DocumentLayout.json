@@ -38,21 +38,19 @@
               "RelativeToolTip": "WebApplication1\\.env",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAACTAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-10-03T03:29:41.388Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-03T03:29:41.388Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "WebApplication1",
+              "Title": "WebApplication1.csproj",
               "DocumentMoniker": "D:\\Documentos\\Programaci\u00F3n\\SIDEAL\\SIDEAL\\WebApplication1\\WebApplication1.csproj",
               "RelativeDocumentMoniker": "WebApplication1\\WebApplication1.csproj",
               "ToolTip": "D:\\Documentos\\Programaci\u00F3n\\SIDEAL\\SIDEAL\\WebApplication1\\WebApplication1.csproj",
               "RelativeToolTip": "WebApplication1\\WebApplication1.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-10-03T03:15:37.859Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-03T03:15:37.859Z"
             },
             {
               "$type": "Document",
@@ -62,7 +60,7 @@
               "RelativeDocumentMoniker": "WebApplication1\\Controllers\\home.cs",
               "ToolTip": "D:\\Documentos\\Programaci\u00F3n\\SIDEAL\\SIDEAL\\WebApplication1\\Controllers\\home.cs",
               "RelativeToolTip": "WebApplication1\\Controllers\\home.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAQwBgAAAAAAAAA",
+              "ViewState": "AQIAABoAAAAAAAAAAAAQwC0AAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-03T02:59:50.724Z",
               "EditorCaption": ""

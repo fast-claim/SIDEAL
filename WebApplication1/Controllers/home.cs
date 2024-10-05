@@ -24,10 +24,10 @@ namespace WebApplication1.Controllers
 
 
                 
-                string apiKey = "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";
+                string apiKey = "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";
 
 
-                string model = "gpt-3.5-turbo"; // Modelo de chat
+                string model = "gpt-3.5-turbo-0125"; // Modelo de chat
                 string answer = string.Empty;
 
                 // Crear el cliente HttpClient
@@ -43,7 +43,7 @@ namespace WebApplication1.Controllers
                             new { role = "system", content = "You are a helpful assistant." },
                             new { role = "user", content = SearchText }
                         },
-                        max_tokens = 200
+                        max_tokens = 400
                     };
 
                     var jsonRequestBody = JsonSerializer.Serialize(requestBody);
