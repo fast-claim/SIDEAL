@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="font-manrope flex flex-col min-h-screen bg-gray-100">
+    <header class="bg-bluefc">
+        <nav class="h-20 flex justify-between items-center w-[92%] mx-auto">
+          <div>
+            <a href="index.html">
+              <img src="img/logos/logoblanco.png" alt="Logo" class="hidden h-16 w-40 ml-10 cursor-pointer lg:flex">
+            </a>
+          </div>
+          <div>
+            <a href="index.html">
+              <img src="img/logos/logoresponsive.png" alt="Logo" class="flex h-16 w-16 cursor-pointer lg:hidden mr-96">
+            </a>
+          </div>
+          <div class="flex lg:hidden w-20">
+
+          </div>
+          <!-- Icono del menú hamburguesa visible en pantallas pequeñas -->
+          <div class="lg:hidden">
+            <button id="menu-button" class="text-white focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" viewBox="0 0 24 24"><path fill="currentColor" d="M3 18v-2h18v2zm0-5v-2h18v2zm0-5V6h18v2z"/></svg>
+            </button>
+          </div>
+
+          <!-- Menú de navegación, oculto en pantallas pequeñas, visible en pantallas medianas y grandes -->
+          <div class="hidden lg:block">
+            <ul class="flex items-center gap-9">
+              <li><a class="text-white text-lg hover:text-gray-500 h-20" href="chatbot.html">ChatBot</a></li>
+              <li><a class="text-white text-lg hover:text-gray-500 h-20" href="formularios.html">Formularios</a></li>
+              <li><a class="text-white text-lg hover:text-gray-500 h-20" href="articles.html">Artículos</a></li>
+              <li><a class="text-white text-lg hover:text-gray-500 h-20" href="documentos.html">Documentos</a></li>
+              <li><a class="text-white text-lg hover:text-gray-500 h-20" href="contactos.html">Contactos</a></li>
+              <li><a class="text-white text-lg hover:text-gray-500 h-20 mr-4 md:mr-20" href="sugerencias.html">Sugerencias</a></li>
+            </ul>
+          </div>
+
+          <!-- Menú desplegable en móviles (inicialmente oculto) -->
+        </nav>
+      </header>
+      <div id="mobile-menu" class="lg:hidden hidden absolute top-20 right-0 bg-bluefc z-40 w-72">
+        <ul class="flex flex-col items-center bg-bluefc text-center">
+          <li class="border-solid border-2 border-white w-full text-center py-2">
+            <a class="text-white text-lg hover:text-gray-500" href="chatbot.html">ChatBot</a>
+          </li>
+          <li class="border-solid border-2 border-white w-full text-center py-2">
+            <a class="text-white text-lg hover:text-gray-500" href="formularios.html">Formularios</a>
+          </li>
+          <li class="border-solid border-2 border-white w-full text-center py-2">
+            <a class="text-white text-lg hover:text-gray-500" href="articles.html">Artículos</a>
+          </li>
+          <li class="border-solid border-2 border-white w-full text-center py-2">
+            <a class="text-white text-lg hover:text-gray-500" href="documentos.html">Documentos</a>
+          </li>
+          <li class="border-solid border-2 border-white w-full text-center py-2">
+            <a class="text-white text-lg hover:text-gray-500" href="contactos.html">Contactos</a>
+          </li>
+          <li class="border-solid border-2 border-white w-full text-center py-2">
+            <a class="text-white text-lg hover:text-gray-500" href="sugerencias.html">Sugerencias</a>
+          </li>
+        </ul>
+      </div>
+</body>
+<script src="js/menu.js"></script>
+</html>
