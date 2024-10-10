@@ -9,7 +9,7 @@ module.exports = {
     },
     extend: {
       colors:{
-      bluefc:'#222455',
+      bluefc:'#222A55',
       purplefc:'#240048',
       cyanfc:'#00689b',
     }},
