@@ -24,7 +24,7 @@ namespace WebApplication1.Controllers
 
 
                 
-                string apiKey = "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";
+                string apiKey = "sk-xce5K8EYNafVPvUQzpUfgjLfMdTJPpTwNV5-VXujaZT3BlbkFJleGrQrXLKVT9kWrxF6qDGW1phoQSW1bNN2aJnInRAA";
 
 
                 string model = "gpt-3.5-turbo-0125"; // Modelo de chat
