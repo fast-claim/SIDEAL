@@ -1,7 +1,5 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using dotenv.net;
-using dotenv.net.Utilities;
 using System;
 using System.Threading.Tasks;
 using System.Net.Http;
@@ -19,15 +17,9 @@ namespace WebApplication1.Controllers
         {
             try
             {
-                
-                
+                string apiKey = "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"; // Coloca tu API Key de OpenAI aquí
+                string model = "ft:gpt-3.5-turbo-0125:personal:sideal-v1:AFsOoQ1K"; // Nombre del modelo fine-tuned
 
-
-                
-                string apiKey = "sk-xce5K8EYNafVPvUQzpUfgjLfMdTJPpTwNV5-VXujaZT3BlbkFJleGrQrXLKVT9kWrxF6qDGW1phoQSW1bNN2aJnInRAA";
-
-
-                string model = "gpt-3.5-turbo-0125"; // Modelo de chat
                 string answer = string.Empty;
 
                 // Crear el cliente HttpClient
@@ -49,18 +41,39 @@ namespace WebApplication1.Controllers
                     var jsonRequestBody = JsonSerializer.Serialize(requestBody);
                     var content = new StringContent(jsonRequestBody, Encoding.UTF8, "application/json");
 
+                    // Enviar solicitud a la API de OpenAI
                     var response = await httpClient.PostAsync("https://api.openai.com/v1/chat/completions", content);
                     var responseString = await response.Content.ReadAsStringAsync();
 
-                    // Procesar la respuesta
-                    var jsonDoc = JsonDocument.Parse(responseString);
-                    var completionText = jsonDoc.RootElement
-                                            .GetProperty("choices")[0]
-                                            .GetProperty("message")
-                                            .GetProperty("content")
-                                            .GetString();
+                    // Verificar si la solicitud fue exitosa
+                    if (!response.IsSuccessStatusCode)
+                    {
+                        return BadRequest($"Error en la solicitud: {responseString}");
+                    }
 
-                    answer = completionText;
+                    // Procesar la respuesta y manejar excepciones si las claves no están presentes
+                    var jsonDoc = JsonDocument.Parse(responseString);
+
+                    if (jsonDoc.RootElement.TryGetProperty("choices", out var choicesElement))
+                    {
+                        var firstChoice = choicesElement[0];
+
+                        if (firstChoice.TryGetProperty("message", out var messageElement) &&
+                            messageElement.TryGetProperty("content", out var contentElement))
+                        {
+                            answer = contentElement.GetString();
+                        }
+                        else
+                        {
+                            // Manejar el caso donde no se encuentra el campo "message" o "content"
+                            return BadRequest("La respuesta no contiene un mensaje válido.");
+                        }
+                    }
+                    else
+                    {
+                        // Manejar el caso donde no se encuentra el campo "choices"
+                        return BadRequest("La respuesta no contiene opciones válidas.");
+                    }
                 }
 
                 return Ok(answer);
