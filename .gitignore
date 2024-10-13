@@ -12,3 +12,5 @@ bin/
 obj/
 
 *.env
+
+appsettings.json
