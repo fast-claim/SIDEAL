@@ -1,3 +1,9 @@
+using dotenv.net;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Hosting;
+
+// Cargar las variables de entorno desde el archivo .env antes de configurar la aplicación
+DotEnv.Load();
 var builder = WebApplication.CreateBuilder(args);
 
 // Acceder a la configuración de ApiKey
