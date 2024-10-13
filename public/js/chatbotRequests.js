@@ -1,5 +1,5 @@
-let chatBot = 'Hola';
-let url = `https://localhost:59716/api/Home/${chatBot}`;
+let chatBot = 'Como denuncio algo a la caja costarricense';
+let url = `https://localhost:59716/api/Home?SearchText=${chatBot}`
 
 async function fetchChatBotResponse() {
     try {

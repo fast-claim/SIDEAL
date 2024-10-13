@@ -1,5 +1,8 @@
 var builder = WebApplication.CreateBuilder(args);
 
+// Acceder a la configuración de ApiKey
+var apiKey = builder.Configuration["AppSettings:ApiKey"];
+
 // Add services to the container.
 builder.Services.AddControllers();
 

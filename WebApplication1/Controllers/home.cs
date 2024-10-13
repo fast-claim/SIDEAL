@@ -1,10 +1,9 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using System;
+﻿using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 using System.Net.Http;
 using System.Text;
 using System.Text.Json;
+using Microsoft.Extensions.Configuration;
 
 namespace WebApplication1.Controllers
 {
@@ -12,12 +11,21 @@ namespace WebApplication1.Controllers
     [ApiController]
     public class HomeController : ControllerBase
     {
+        private readonly IConfiguration _configuration;
+
+        // Constructor que inyecta la configuración
+        public HomeController(IConfiguration configuration)
+        {
+            _configuration = configuration;
+        }
+
         [HttpPost]
         public async Task<IActionResult> GetAIBasedResult(string SearchText)
         {
             try
             {
-                string apiKey = "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"; // Coloca tu API Key de OpenAI aquí
+                // Accediendo al ApiKey desde la configuración
+                string apiKey = _configuration["AppSettings:ApiKey"];
                 string model = "ft:gpt-3.5-turbo-0125:personal:sideal-v1:AFsOoQ1K"; // Nombre del modelo fine-tuned
 
                 string answer = string.Empty;
@@ -45,13 +53,11 @@ namespace WebApplication1.Controllers
                     var response = await httpClient.PostAsync("https://api.openai.com/v1/chat/completions", content);
                     var responseString = await response.Content.ReadAsStringAsync();
 
-                    // Verificar si la solicitud fue exitosa
                     if (!response.IsSuccessStatusCode)
                     {
                         return BadRequest($"Error en la solicitud: {responseString}");
                     }
 
-                    // Procesar la respuesta y manejar excepciones si las claves no están presentes
                     var jsonDoc = JsonDocument.Parse(responseString);
 
                     if (jsonDoc.RootElement.TryGetProperty("choices", out var choicesElement))
@@ -65,13 +71,11 @@ namespace WebApplication1.Controllers
                         }
                         else
                         {
-                            // Manejar el caso donde no se encuentra el campo "message" o "content"
                             return BadRequest("La respuesta no contiene un mensaje válido.");
                         }
                     }
                     else
                     {
-                        // Manejar el caso donde no se encuentra el campo "choices"
                         return BadRequest("La respuesta no contiene opciones válidas.");
                     }
                 }
