@@ -13,6 +13,3 @@ obj/
 
 *.env
 
-#WebApplication1/appsettings.json
-
-#**/appsettings.json
