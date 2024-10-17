@@ -4,7 +4,6 @@ using System.Net.Http;
 using System.Text;
 using System.Text.Json;
 using Microsoft.Extensions.Configuration;
-using dotenv.net;
 
 namespace WebApplication1.Controllers
 {
@@ -20,18 +19,30 @@ namespace WebApplication1.Controllers
             _configuration = configuration;
         }
 
+        // Clase que recibe el JSON con el campo SearchText
+        public class SearchRequest
+        {
+            public string SearchText { get; set; }
+        }
+
         [HttpPost]
-        public async Task<IActionResult> GetAIBasedResult(string SearchText)
+        public async Task<IActionResult> GetAIBasedResult([FromBody] SearchRequest request)
         {
             try
             {
+                // Verifica si el campo SearchText tiene un valor válido
+                if (string.IsNullOrEmpty(request.SearchText))
+                {
+                    return BadRequest(new { error = "El campo 'SearchText' es requerido." });
+                }
+
                 // Accediendo al ApiKey desde la configuración
                 string apiKey = _configuration["AppSettings:ApiKey"];
                 string model = "ft:gpt-3.5-turbo-0125:personal:sideal-v1:AFsOoQ1K"; // Nombre del modelo fine-tuned
 
                 string answer = string.Empty;
 
-                // Crear el cliente HttpClient
+                // Crear el cliente HttpClient para enviar la solicitud a OpenAI
                 using (var httpClient = new HttpClient())
                 {
                     httpClient.DefaultRequestHeaders.Add("Authorization", $"Bearer {apiKey}");
@@ -42,7 +53,7 @@ namespace WebApplication1.Controllers
                         messages = new[]
                         {
                             new { role = "system", content = "You are a helpful assistant." },
-                            new { role = "user", content = SearchText }
+                            new { role = "user", content = request.SearchText }
                         },
                         max_tokens = 400
                     };
@@ -56,7 +67,7 @@ namespace WebApplication1.Controllers
 
                     if (!response.IsSuccessStatusCode)
                     {
-                        return BadRequest($"Error en la solicitud: {responseString}");
+                        return BadRequest(new { error = "Error en la solicitud a OpenAI", details = responseString });
                     }
 
                     var jsonDoc = JsonDocument.Parse(responseString);
@@ -72,20 +83,22 @@ namespace WebApplication1.Controllers
                         }
                         else
                         {
-                            return BadRequest("La respuesta no contiene un mensaje válido.");
+                            return BadRequest(new { error = "La respuesta no contiene un mensaje válido." });
                         }
                     }
                     else
                     {
-                        return BadRequest("La respuesta no contiene opciones válidas.");
+                        return BadRequest(new { error = "La respuesta no contiene opciones válidas." });
                     }
                 }
 
-                return Ok(answer);
+                // Devolver la respuesta como JSON
+                return Ok(new { answer = answer });
             }
             catch (Exception ex)
             {
-                return BadRequest($"Razon del error: {ex.Message}");
+                // Devolver el error como JSON
+                return BadRequest(new { error = "Se produjo un error interno", message = ex.Message });
             }
         }
     }

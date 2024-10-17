@@ -1,14 +1,18 @@
-let chatBot = 'Como denuncio algo a la caja costarricense';
-let url = `https://localhost:59716/api/Home?SearchText=${chatBot}`
+let chatBotElement = document.getElementById('textoChatbot'); 
+let respuesta = document.getElementById('respuesta'); 
+let url = `https://localhost:59716/api/Home`;
 
 async function fetchChatBotResponse() {
     try {
+        
+        const chatBotText = chatBotElement.value;
+
         const response = await fetch(url, {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json' 
+                'Content-Type': 'application/json'
             },
-            body: JSON.stringify({ SearchText: chatBot }) 
+            body: JSON.stringify({ SearchText: chatBotText })  
         });
 
         if (!response.ok) {
@@ -16,10 +20,17 @@ async function fetchChatBotResponse() {
         }
 
         const data = await response.json();
-        console.log(data);
+        console.log(data.answer);
+        respuesta.innerHTML = data.answer;  
     } catch (error) {
         console.error('Error detectado:', error.message);
     }
 }
 
-fetchChatBotResponse();
+
+chatBotElement.addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+        event.preventDefault();  
+        fetchChatBotResponse();  
+    }
+});
