@@ -19,7 +19,7 @@
               <img src="img/svg/logoresponsive.svg" alt="Logo" class="flex h-16 w-16 cursor-pointer lg:hidden mr-96">
             </a>
           </div>
-          <div class="flex lg:hidden w-20">
+          <div class="flex lg:hidden w-72">
 
           </div>
           <!-- Icono del menú hamburguesa visible en pantallas pequeñas -->
@@ -44,7 +44,7 @@
           <!-- Menú desplegable en móviles (inicialmente oculto) -->
         </nav>
       </header>
-      <div id="mobile-menu" class="lg:hidden hidden absolute top-20 right-0 bg-bluefc z-40 w-72">
+      <div id="mobile-menu" class="lg:hidden hidden fixed top-20 right-0 bg-bluefc z-40 w-72">
         <ul class="flex flex-col items-center bg-bluefc text-center">
           <li class="border-solid border-2 border-white w-full text-center py-2">
             <a class="text-white text-lg hover:text-gray-500" href="chatbot.html">ChatBot</a>
@@ -67,19 +67,22 @@
         </ul>
       </div>
 
+      
+      
       <main class="flex-grow pt-20 mt-1">
+        <div class="flex bg-gray-100 justify-center">
+          <input type="text" name="" id="textoChatbot" placeholder="Tienes alguna duda?, Consulta con el Asistente" 
+          class="w-60 rounded-3xl p-1 bg-gray-300 hover:bg-gray-400 text-gray-800 placeholder-gray-500 transition-colors 
+          duration-300 ease-in-out pl-6 fixed bottom-6 z-50 lg: w-7/12 h-14" >
+          <img src="img/svg/send.svg" alt="Enviar" class="fixed bottom-9 right-72 mr-2 z-50 h-8 w-8 cursor-pointer" onclick="fetchChatBotResponse()">
+        </div>
+
+        <!-- Contenedor donde se van a mostrar los mensajes -->
+        <div id="chatContainer" class="ml-10 mt-0 mr-10 mb-24 flex flex-col space-y-3 max-h-max overflow-y-auto bg-gray-100"></div>
         
-    <div class="flex bg-gray-100">
-<input type="text" name="" id="textoChatbot" placeholder="Tienes alguna duda?,Consulta con el Asistente" 
-class="ml-72 w-7/12 h-14 rounded-full p-1 bg-gray-300 hover:bg-gray-400 text-gray-800 placeholder-gray-500 transition-colors 
-duration-300 ease-in-out pl-6 fixed bottom-6 z-50">
-
-<img src="img/svg/send.svg" alt="" class="fixed bottom-6 z-50 right-64  bottom-9 mr-9" onclick="fetchChatBotResponse()">
-
-    </div>
-    <div id="respuesta" class="bg-bluefc w-72 m-auto text-white"></div>
-    </main>
-
+        <!--Div para que no se vean los mensajes debajo del input-->
+        <div class="w-full bg-gray-100 h-24 mb-0 bottom-0 fixed"></div>
+      </main>
 </body>
 <script src="js/menu.js"></script>
 <script src="js/chatbotRequests.js"></script>
