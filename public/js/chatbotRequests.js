@@ -35,7 +35,7 @@ async function fetchChatBotResponse() {
 
         // Respuesta del bot
         let botResponseDiv = document.createElement('div');
-        botResponseDiv.className = 'bg-blue-600 text-lg max-w-xl w-auto mt-3 rounded-2xl p-4 text-left text-white self-start break-words shadow-md'; // Alineado a la izquierda
+        botResponseDiv.className = 'bg-blue-600 text-base sm:text-lg max-w-xl w-auto mt-3 rounded-2xl p-4 text-left text-white self-start break-words shadow-md'; // Alineado a la izquierda
         botResponseDiv.innerHTML = data.answer;
         chatContainer.appendChild(botResponseDiv);
 
