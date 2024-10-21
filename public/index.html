@@ -71,142 +71,131 @@
     
     
     <!--Acceso al chatbot y a un carrusel con acceso a articulos importantes-->
-    <div class="ml-16 h-3/6 w-11/12 bg-gray-100 rounded-lg shadow-xl">
-    <div class="flex min-h-screen items-center justify-center mt-4">
-        <div class="w-1/2 flex items-center justify-center">
-            <div class="text-center p-20">
-                <h2 class="text-5xl mb-4">SIDEAL</h2>
-                <h3 class="text-4xl mb-6 font-extralight">Denuncia con conocimientos</h3>
-                <a href="chatbot.html" class="bg-bluefc text-white text-3xl px-4 py-2 rounded">Probar ChatBot</a>
-            </div>
-        </div>
-        <div class="w-1/2 h-96 bg-gradient-to-br from-cyanfc to-purplefc flex items-center justify-center relative overflow-hidden rounded-lg shadow-lg mx-20">
-            <!-- Imagen 1 -->
-            <div class="image opacity-100 absolute w-full h-full flex-shrink-0 flex flex-col items-center justify-center">
-              <img src="img/AYA.jpg" alt="Articulo AyA" class="w-full h-full object-cover filter brightness-75 rounded-lg">
-              <p class="absolute text-white text-xl bottom-4">Artículo de ejemplo sobre el AyA</p>
-            </div>
-            <!-- Imagen 2 -->
-            <div class="image opacity-0 absolute w-full h-full flex-shrink-0 flex flex-col items-center justify-center">
-              <img src="img/cnflarticulo.jpg" alt="Articulo CNFL" class="w-full h-full object-cover filter brightness-75 rounded-lg">
-              <p class="absolute text-white text-xl bottom-4">Artículo de ejemplo sobre la CNFL</p>
-            </div>
-            <!-- Imagen 3 -->
-            <div class="image opacity-0 absolute w-full h-full flex-shrink-0 flex flex-col items-center justify-center">
-              <img src="img/CCSSarticulo.jpg" alt="Articulo CCSS" class="w-full h-full object-cover filter brightness-75 rounded-lg">
-              <p class="absolute text-white text-xl bottom-4">Artículo de ejemplo sobre la CCSS</p>
-            </div>
-          
-            <!-- Flecha izquierda -->
-            <button id="prev" class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-70 text-black p-3 rounded-full hover:bg-opacity-90 transition z-20">
-              &#8592;
-            </button>
-          
-            <!-- Flecha derecha -->
-            <button id="next" class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-70 text-black p-3 rounded-full hover:bg-opacity-90 transition z-20">
-              &#8594;
-            </button> 
+    <div class="ml-4 lg:ml-16 h-auto lg:h-3/6 w-full lg:w-11/12 bg-gray-100 rounded-lg shadow-xl">
+      <div class="flex flex-col lg:flex-row min-h-screen items-center justify-center mt-4">
+          <!-- Texto y botón -->
+          <div class="w-full lg:w-1/2 flex items-center justify-center">
+              <div class="text-center p-10 lg:p-20">
+                  <h2 class="text-3xl lg:text-5xl mb-4">SIDEAL</h2>
+                  <h3 class="text-2xl lg:text-4xl mb-6 font-extralight">Denuncia con conocimientos</h3>
+                  <a href="chatbot.html" class="bg-bluefc text-white text-xl lg:text-3xl px-4 py-2 rounded">Probar ChatBot</a>
+              </div>
           </div>
+
+          <!-- Sección de imágenes -->
+          <div class="w-full lg:w-1/2 h-72 lg:h-96 bg-gradient-to-br from-cyanfc to-purplefc flex items-center justify-center relative overflow-hidden rounded-lg shadow-lg mx-4 lg:mx-20">
+              <!-- Imagen 1 -->
+              <div class="image opacity-100 absolute w-full h-full flex-shrink-0 flex flex-col items-center justify-center">
+                  <img src="img/AYA.jpg" alt="Articulo AyA" class="w-full h-full object-cover filter brightness-75 rounded-lg">
+                  <p class="absolute text-white text-lg lg:text-xl bottom-4">Artículo de ejemplo sobre el AyA</p>
+              </div>
+              <!-- Imagen 2 -->
+              <div class="image opacity-0 absolute w-full h-full flex-shrink-0 flex flex-col items-center justify-center">
+                  <img src="img/cnflarticulo.jpg" alt="Articulo CNFL" class="w-full h-full object-cover filter brightness-75 rounded-lg">
+                  <p class="absolute text-white text-lg lg:text-xl bottom-4">Artículo de ejemplo sobre la CNFL</p>
+              </div>
+              <!-- Imagen 3 -->
+              <div class="image opacity-0 absolute w-full h-full flex-shrink-0 flex flex-col items-center justify-center">
+                  <img src="img/CCSSarticulo.jpg" alt="Articulo CCSS" class="w-full h-full object-cover filter brightness-75 rounded-lg">
+                  <p class="absolute text-white text-lg lg:text-xl bottom-4">Artículo de ejemplo sobre la CCSS</p>
+              </div>
           
-  
-    </div>
-    </div>
-
-
-    <!--Seccion de datos del día-->
-    <div class="ml-16 h-3/6 w-11/12 bg-gray-100 rounded-lg shadow-xl mt-10">
-    <div class="flex min-h-screen ">
-        <div class="w-1/2 h-[300px] flex items-center justify-center min-h-screen">
-            <div class="w-3/4 h-4/6 bg-gradient-to-br from-cyanfc to-purplefc text-white p-10 rounded-2xl shadow-lg flex flex-col items-center justify-between">
-              <p id="curiousData" class="text-center text-3xl font-extrabold mb-4 flex-grow flex items-center justify-center"></p>
-              <button class="w-4/5 bg-bluefc text-white font-bold py-2 px-4 rounded-md hover:bg-blue-800 transition mt-4 text-2xl" onclick="getData()">
-                Nuevo Dato
+              <!-- Flechas de navegación -->
+              <button id="prev" class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-70 text-black p-3 rounded-full hover:bg-opacity-90 transition z-20">
+                  &#8592;
               </button>
-            </div>
+              <button id="next" class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-70 text-black p-3 rounded-full hover:bg-opacity-90 transition z-20">
+                  &#8594;
+              </button> 
+          </div>
+      </div>
+  </div>
+
+  <!-- Sección de datos curiosos -->
+  <div class="ml-4 lg:ml-16 h-auto lg:h-3/6 w-full lg:w-11/12 bg-gray-100 rounded-lg shadow-xl mt-10">
+      <div class="flex flex-col lg:flex-row min-h-screen">
+          <div class="w-full lg:w-1/2 h-auto lg:h-[300px] flex items-center justify-center min-h-screen">
+              <div class="w-3/4 h-auto lg:h-4/6 bg-gradient-to-br from-cyanfc to-purplefc text-white p-10 rounded-2xl shadow-lg flex flex-col items-center justify-between">
+                  <p id="curiousData" class="text-center text-2xl lg:text-3xl font-extrabold mb-4 flex-grow flex items-center justify-center"></p>
+                  <button class="w-full lg:w-4/5 bg-bluefc text-white font-bold py-2 px-4 rounded-md hover:bg-blue-800 transition mt-4 text-lg lg:text-2xl" onclick="getData()">
+                      Nuevo Dato
+                  </button>
+              </div>
           </div>
           
-          
-          
-          
-        <div class="w-1/2 flex items-center justify-center">
-            <div class=" ">
-                <h2 class="text-5xl mb-4">Datos curiosos legales</h2>
-                
-            </div>
-        </div>
-    </div>
-    </div>
-    
-    <div id="index1" class="h-72 relative mt-10 overflow-hidden group cursor-pointer">
-        <!-- Imagen con efecto de zoom al hacer hover -->
-        <img class="filter brightness-50 w-full h-full object-cover transform transition-transform duration-500 ease-in-out group-hover:scale-105" src="img/parallax.jpg" alt="">
+          <div class="w-full lg:w-1/2 flex items-center justify-center">
+              <div>
+                  <h2 class="text-3xl lg:text-5xl mb-4">Datos curiosos legales</h2>
+              </div>
+          </div>
+      </div>
+  </div>
 
-        <!-- Texto superpuesto -->
-        <p class="absolute inset-0 flex items-center justify-start text-white text-5xl font-extrabold px-8">
-            Sobre Nosotros 
-        </p>
-        <p class="absolute inset-0 flex items-end justify-start text-white text-2xl font-extrathin px-10 mb-4">Click para saber más</p>
-    </div>
-    
-    <!-- Contenedor para subtítulo y párrafo -->
-    <div id="textIndex1" class="text-center max-w-3xl mx-auto mb-12 hidden">
-        <p class="text-2xl font-bold mb-4">Asistente en la Presentación de Denuncias</p>
-        <p class="text-xl leading-relaxed">
-            SIDEAL es una herramienta diseñada para brindar asistencia a las personas que necesitan presentar denuncias ante instituciones públicas en Costa Rica. 
-            Este proyecto responde a la necesidad urgente de simplificar y guiar a los jóvenes entre 18 y 40 años, quienes muchas veces se 
-            sienten desinformados sobre los procesos legales y burocráticos. 
-            Con SIDEAL, ofrecemos una solución web que centraliza la información, 
-            proporcionando a los usuarios un lugar donde pueden entender fácilmente 
-            qué es denunciable y cómo proceder, todo en un entorno digital accesible y amigable.
-        </p>
-    </div>
-    
-    <!-- Repite el mismo patrón para las otras imágenes -->
-    <div id="index2" class="h-72 relative  overflow-hidden group cursor-pointer">
-        <img class="filter brightness-50 w-full h-full object-cover transform transition-transform duration-500 ease-in-out group-hover:scale-105" src="img/AyA-3.jpg" alt="">
-        <p class="absolute inset-0 flex items-center justify-start text-white text-5xl font-extrabold px-8">
-            Te brindamos asistencia
-        </p>
-        <p class="absolute inset-0 flex items-end justify-start text-white text-2xl font-extrathin px-10 mb-4">Click para saber más</p>
-    </div>
-    
-    <!-- Contenedor para subtítulo y párrafo -->
-    <div id="textIndex2" class="text-center max-w-3xl mx-auto mb-12 hidden">
-        <p class="text-2xl font-bold mb-4">El Problema de la Desinformación en los Procesos Legales</p>
-        <p class="text-xl leading-relaxed">
-            Una de las mayores barreras para la justicia es la falta de conocimiento 
-            sobre cómo y dónde presentar denuncias. 
-            Este desconocimiento puede perpetuar injusticias y frustraciones entre los ciudadanos. 
-            SIDEAL no solo identifica qué situaciones son denunciables, sino que también simplifica los procesos tediosos y 
-            burocráticos, guiando a los usuarios en cada paso. 
-            Nuestro objetivo es reducir la confusión y brindar un acceso más directo a la justicia, 
-            eliminando las barreras que impiden que las personas se defiendan ante injusticias.
-        </p>
-    </div>
-    
-    <div id="index3" class="h-72 relative mb-8 overflow-hidden group cursor-pointer">
-        <img class="filter brightness-50 w-full h-full object-cover transform transition-transform duration-500 ease-in-out group-hover:scale-105" src="img/ccssedificio.jpg" alt="">
-        <p class="absolute inset-0 flex items-center justify-start text-white text-5xl font-extrabold px-8">
-            Información centralizada
-        </p>
-        <p class="absolute inset-0 flex items-end justify-start text-white text-2xl font-extrathin px-10 mb-4">Click para saber más</p>
-    </div>
-    
-    <!-- Contenedor para subtítulo y párrafo -->
-    <div id="textIndex3" class="text-center max-w-3xl mx-auto mb-12 hidden">
-        <p class="text-2xl font-bold mb-4">Centralización de Información Legal y Atención Personalizada</p>
-        <p class="text-xl leading-relaxed">
-            SIDEAL busca ser el punto central donde los usuarios puedan acceder 
-            a toda la información relevante sobre la presentación de denuncias. 
-            A menudo, la información está dispersa y desorganizada, 
-            lo que hace que las personas se desmotiven o cometan errores en el proceso. 
-            Con nuestra plataforma, la información está organizada y fácilmente disponible. 
-            Además, ofrecemos atención personalizada a través de un chatbot basado en inteligencia artificial, 
-            que puede responder preguntas frecuentes y guiar a los usuarios durante todo el proceso, 
-            asegurando que reciban la orientación adecuada en el momento que más lo necesitan.
-        </p>
-    </div>
+  <!-- Sección de sobre nosotros -->
+  <div id="index1" class="h-72 lg:h-72 relative mt-10 overflow-hidden group cursor-pointer">
+      <img class="filter brightness-50 w-full h-full object-cover transform transition-transform duration-500 ease-in-out group-hover:scale-105" src="img/parallax.jpg" alt="">
+      <p class="absolute inset-0 flex items-center justify-start text-white text-3xl lg:text-5xl font-extrabold px-8">
+          Sobre Nosotros 
+      </p>
+      <p class="absolute inset-0 flex items-end justify-start text-white text-lg lg:text-2xl font-extrathin px-10 mb-4">Click para saber más</p>
+  </div>
 
+  <div id="textIndex1" class="text-center max-w-3xl mx-auto mb-12 hidden">
+      <p class="text-xl lg:text-2xl font-bold mb-4">Asistente en la Presentación de Denuncias</p>
+      <p class="text-lg lg:text-xl leading-relaxed">
+          SIDEAL es una herramienta diseñada para brindar asistencia a las personas que necesitan presentar denuncias ante instituciones públicas en Costa Rica. 
+          Este proyecto responde a la necesidad urgente de simplificar y guiar a los jóvenes entre 18 y 40 años, quienes muchas veces se 
+          sienten desinformados sobre los procesos legales y burocráticos. 
+          Con SIDEAL, ofrecemos una solución web que centraliza la información, 
+          proporcionando a los usuarios un lugar donde pueden entender fácilmente 
+          qué es denunciable y cómo proceder, todo en un entorno digital accesible y amigable.
+      </p>
+  </div>
+
+  <!-- Sección de asistencia -->
+  <div id="index2" class="h-72 relative overflow-hidden group cursor-pointer">
+      <img class="filter brightness-50 w-full h-full object-cover transform transition-transform duration-500 ease-in-out group-hover:scale-105" src="img/AyA-3.jpg" alt="">
+      <p class="absolute inset-0 flex items-center justify-start text-white text-3xl lg:text-5xl font-extrabold px-8">
+          Te brindamos asistencia
+      </p>
+      <p class="absolute inset-0 flex items-end justify-start text-white text-lg lg:text-2xl font-extrathin px-10 mb-4">Click para saber más</p>
+  </div>
+
+  <div id="textIndex2" class="text-center max-w-3xl mx-auto mb-12 hidden">
+      <p class="text-xl lg:text-2xl font-bold mb-4">El Problema de la Desinformación en los Procesos Legales</p>
+      <p class="text-lg lg:text-xl leading-relaxed">
+          Una de las mayores barreras para la justicia es la falta de conocimiento 
+          sobre cómo y dónde presentar denuncias. 
+          Este desconocimiento puede perpetuar injusticias y frustraciones entre los ciudadanos. 
+          SIDEAL no solo identifica qué situaciones son denunciables, sino que también simplifica los procesos tediosos y 
+          burocráticos, guiando a los usuarios en cada paso. 
+          Nuestro objetivo es reducir la confusión y brindar un acceso más directo a la justicia, 
+          eliminando las barreras que impiden que las personas se defiendan ante injusticias.
+      </p>
+  </div>
+
+  <!-- Sección de información centralizada -->
+  <div id="index3" class="h-72 relative mb-8 overflow-hidden group cursor-pointer">
+      <img class="filter brightness-50 w-full h-full object-cover transform transition-transform duration-500 ease-in-out group-hover:scale-105" src="img/ccssedificio.jpg" alt="">
+      <p class="absolute inset-0 flex items-center justify-start text-white text-3xl lg:text-5xl font-extrabold px-8">
+          Información centralizada
+      </p>
+      <p class="absolute inset-0 flex items-end justify-start text-white text-lg lg:text-2xl font-extrathin px-10 mb-4">Click para saber más</p>
+  </div>
+
+  <div id="textIndex3" class="text-center max-w-3xl mx-auto mb-12 hidden">
+      <p class="text-xl lg:text-2xl font-bold mb-4">Centralización de Información Legal y Atención Personalizada</p>
+      <p class="text-lg lg:text-xl leading-relaxed">
+          SIDEAL busca ser el punto central donde los usuarios puedan acceder 
+          a toda la información relevante sobre la presentación de denuncias. 
+          A menudo, la información está dispersa y desorganizada, 
+          lo que hace que las personas se desmotiven o cometan errores en el proceso. 
+          Con nuestra plataforma, la información está organizada y fácilmente disponible. 
+          Además, ofrecemos atención personalizada a través de un chatbot basado en inteligencia artificial, 
+          que puede responder preguntas frecuentes y guiar a los usuarios durante todo el proceso, 
+          asegurando que reciban la orientación adecuada en el momento que más lo necesitan.
+      </p>
+  </div>
 
 
     <section class="bg-bluefc">
