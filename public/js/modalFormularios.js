@@ -18,3 +18,8 @@ function modalForms(idForm){
 function closeModal() {
     document.getElementById('modal').classList.add('hidden');
 }
+
+function toggleSidebar() {
+    const sidebar = document.getElementById('sidebar');
+    sidebar.classList.toggle('hidden');
+}
