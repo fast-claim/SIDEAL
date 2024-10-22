@@ -1,0 +1,138 @@
+[
+    {
+        "id":0,
+        "title":"Formulario para consultas y denuncias de la CCSS",
+        "modalContent":"Te dirigirás a la pagina web de la CCSS, desde allí podras realizar este formulario"
+    },
+    {
+        "id":1,
+        "title":"Solicitud de afiliacion trabajador independiente",
+        "modalContent":"Con este formulario podrás asegurarte en la caja si eres trabajador independiente"
+    },
+    {
+        "id":2,
+        "title":"Solicitar valoracion médica de bono familiar de vivienda y medio",
+        "modalContent":"En caso de estar con discapacidad total y permanente, con este formulario podrás solicitar el bono para poder acceder a vivienda"
+    },
+    {
+        "id":3,
+        "title":"Formulario para tramites de la CCSS",
+        "modalContent":"En esta seccion de la pagina web de la ccss podrás acceder a varios tramites que la institucion ofrece "
+    },
+    {
+        "id":4,
+        "title":"Formulario consultas y sugerencias CNFL",
+        "modalContent":"Este formulario es para envíar una sugerencia sobre las denuncias relacionadas con el uso y manejo de fondos públicos."
+    },
+    {
+        "id":5,
+        "title":"Solicitud Desconexión y Reconexión por Trabajos Internos en Baja Tensión",
+        "modalContent":"Aquí solicitaras que se te suspenda el servicio electrico temporalmente para realizar trabajo de mantenimiento electrico en baja tensión"
+
+    },
+    {
+        "id":6,
+        "title":"Solicitud Desconexión y Reconexión por Trabajos Internos en Media Tensión industrial y comercial",
+        "modalContent":"Aquí solicitaras que se te suspenda el servicio electrico temporalmente para realizar trabajo de mantenimiento electrico en media tensión"
+    },
+    {
+        "id":7,
+        "title":"Formulario Desconexión y Reconexión por trabajos internos",
+        "modalContent":"Aquí solicitaras que se te suspenda el servicio electrico temporalmente para realizar trabajo de mantenimiento electrico"
+    },
+    {
+        "id":8,
+        "title":"Autorización Cargo por Desconexión por trabajos internos",
+        "modalContent":"Autorizar el cobro de un cargo por desconexión del servicio eléctrico, debido a trabajos internos o solicitud del abonado"
+    },
+    {
+        "id":9,
+        "title":"Formulario Solicitud de Protección Familiar",
+        "modalContent":"El presente formulario podrá ser completado por cualquiera de los interesados, persona asegurada directa o posible protegido familiar que requiera extender o solicitar por primera vez la Protección Familiar"
+    },
+    {
+        "id":10,
+        "title":"Solicitud de pensión CCSS",
+        "modalContent":"Solicitar pension por vejez"
+    },
+    {
+        "id":11,
+        "title":"Formulario de denuncias ICE",
+        "modalContent":"El ICE pone a su disposición el siguiente medio a través del cual puede dar a conocer a la Auditoría Interna del Instituto, hechos o situaciones en las que se presumen actos irregulares relacionados con el manejo de recursos públicos"
+    },
+    {
+        "id":12,
+        "title":"Formulario sugerencias o reclamos ICE",
+        "modalContent":"Con  este formulario puedes presentar los reclamos o sugerencias al ICE que consideres necesarios"
+    },
+    {
+        "id":13,
+        "title":"Tramites para el ICE",
+        "modalContent":"Informacion sobre tramites ofrecido por el ICE"
+    },
+    {
+        "id":14,
+        "title":"Denuncias para el MTSS",
+        "modalContent":"Catalogo de guia sobre denuncias ofrecidas por el MTSS"
+    },
+    {
+        "id":15,
+        "title":"Formulario para denuncias y quejas del MTSS",
+        "modalContent":"Para denunciar casos ante el MTSS"
+    },
+    {
+        "id":16,
+        "title":"Consultas para el MTSS",
+        "modalContent":"Diversas salas de chat para atender dudas al MTSS, tomar en cuenta que solo están abiertas en ciertos horarios"
+    },
+    {
+        "id":17,
+        "title":"Tramites y servicios MTSS",
+        "modalContent":"Catalogo de tramites y servicios de MTSS"
+    },
+    {
+        "id":18,
+        "title":"Inspección de trabajo requisitos",
+        "modalContent":"Requisitos para trámites en la Dirección Nacional de Inspección de Trabajo"
+    },
+    {
+        "id":19,
+        "title":"Formularios generales MTSS",
+        "modalContent":"Los siguientes formularios son complementarios del proceso de trámites que deben ser  cumplidos por  los usuarios conforme  las  diligencias,  que requieran realizar en el Ministerio de Trabajo y Seguridad Social."
+    },
+    {
+        "id":20,
+        "title":"Formularios para el Ministerio de Salud",
+        "modalContent":"Formularios para denuncias en el MTSS"
+    },
+    {
+        "id":21,
+        "title":"Formulario Presentación de denuncias AyA",
+        "modalContent":"Formulario de Presentación de Denuncias​ AyA "
+    },
+    {
+        "id":22,
+        "title":"Sugerencias AyA",
+        "modalContent":"Seccion en la web del AyA para hacerles llegar sugerencias"
+    },
+    {
+        "id":23,
+        "title":"Reporte de fugas",
+        "modalContent":"Reportar fugas en los acueductos del AyA"
+    },
+    {
+        "id":24,
+        "title":"Queja faltante de agua",
+        "modalContent":"Para reportar que se lleva varios dias sin servicio de agua"
+    },
+    {
+        "id":25,
+        "title":"Formularios de servicios AyA",
+        "modalContent":"Solicitar diversos servicios del AyA"
+    },
+    {
+        "id":26,
+        "title":"Consultas de facturacion",
+        "modalContent":"Consultar cuanto de agua debe de pagar"
+    }
+]
