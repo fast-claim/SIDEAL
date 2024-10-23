@@ -3,20 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/svg/logo azul.svg">
-    <title>Document</title>
     <link rel="stylesheet" href="css/styles.css">
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init({
-        publicKey: "pozynHnLZM8H_bbBq",
-      });
-   })();
-</script>
-
+    <link rel="shortcut icon" href="img/svg/logoresponsive.svg">
+    <title>Equipo</title>
 </head>
 <body>
     <header class="bg-bluefc fixed top-0 left-0 right-0 z-50 w-full">
@@ -87,59 +76,35 @@
           
         </nav>
       </header>
-
-
-      <section class="bg-gray-200 py-8 mt-24">
-        <div class="max-w-screen-lg mx-auto px-4 text-center">
-            <h2 class="text-2xl font-bold mb-4">Sugerencias</h2>
-            <p class="text-lg text-gray-700">En esta sección nos gustaria poder contar con tu ayuda y comentarios, rellena los datos del formulario y escribenos la sugerencia que tengas, esto nos ayudará a llevar a cabo nuestro objetivo de mejor manera.
-        </div>
+      <main>
+        <section class="bg-gray-200 py-8 mt-24">
+            <div class="max-w-screen-lg mx-auto px-4 text-center">
+                <h2 class="text-2xl font-bold mb-4">Nuestro equipo</h2>
+                <p class="text-lg text-gray-700">Conoce a los desarrolladores de SIDEAL</p>
+            </div>
+        </section>
+    <section>
+        <h3>Gabriel Abarca</h3>
+        <img src="" alt="">
+        <p>Se ha encargado principalmente de la conexion del chatbot y de comunicar la pagina con el api de OpenAI.</p>
     </section>
-
-
-    <!-- Sección de Formulario de Sugerencias -->
-    <section class="bg-gray-300 py-10">
-        <div class="max-w-screen-md mx-auto bg-gradient-to-br from-cyanfc to-purplefc rounded-lg shadow-lg p-8 ">
-            <h2 class="text-3xl font-bold text-white mb-6 text-center">Envíanos tu sugerencia</h2>
-            <form id="contact-form" class="space-y-6" action="https://formsubmit.co/fastclaim2024@gmail.com" method="POST">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 ">
-                    <div>
-                        <label for="nombre" class="block text-sm font-medium  text-white">Nombre</label>
-                        <input type="text" id="nombre" name="nombre" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm p-3" placeholder="Ingresa tu nombre">
-                    </div>
-                    
-                    <div>
-                        <label for="apellido" class="block text-sm font-medium text-white">Apellido</label>
-                        <input type="text" id="apellido" name="apellido" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm p-3" placeholder="Ingresa tu apellido">
-                    </div>
-                    
-                    
-                </div>
-                <div>
-                    <label for="correo" class="block text-sm font-medium text-white">Correo Electrónico</label>
-                    <input type="text" id="email" name="correo" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm p-3" placeholder="correo@ejemplo.com">
-                </div>
-                
-                
-                <div>
-                    <label for="sugerencia" class="block text-sm font-medium text-white">Escribe tu sugerencia</label>
-                    <textarea id="sugerencia" name="sugerencia" required rows="4" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm p-3" placeholder="Escribe tu sugerencia aquí"></textarea>
-                </div>
-                <div class="flex justify-center">
-                    <input type="submit" onclick="sendMail()" class="px-6 py-3 bg-bluefc text-white font-bold rounded-md hover:bg-blue-700 transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-bluefc">
-                    </input>
-                    <input type="hidden" name="_next" value="http://127.0.0.1:5501/public/index.html">
-                    <input type="hidden" name="_captcha" value="false">
-
-                </div>
-            </form>
-        </div>
+    <section>
+        <h3>Fabian Carrillo</h3>
+        <img src="" alt="">
+        <p>Se ha encargado de darle funcionalidad e interactividad a distintas secciones de la pagina.</p>
     </section>
-
-
-
-    
-    <section class="bg-bluefc">
+    <section>
+        <h3>Yerick Mondragon</h3>
+        <img src="" alt="">
+        <p>Se ha encargado de acomodar información, textos y de nuestra linea grafica.</p>
+    </section>
+    <section>
+        <h3>Carlos Sanchez</h3>
+        <img src="" alt="">
+        <p>Se ha encargado de diseñar la pagina, y de darle el responsive para que SIDEAL funcione en todos los dispositivos. </p>
+    </section>
+      </main>
+      <section class="bg-bluefc">
         <div class="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
             <nav class="flex flex-wrap justify-center -mx-5 -my-2">
                 <div class="px-5 py-2">
@@ -182,10 +147,7 @@
             </p>
         </div>
     </section>
-    <script src="js/menu.js"></script>
-    <script src="js/script.js"></script>
+
+
 </body>
-
-
 </html>
-    

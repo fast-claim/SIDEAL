@@ -41,7 +41,7 @@ async function fetchChatBotResponse() {
 
         // Hacer scroll al final del contenedor para mostrar el último mensaje
         chatContainer.scrollTop = chatContainer.scrollHeight;
-        chatContainer.className = 'flex flex-col p-4 h-full overflow-y-auto'; // Contenedor flexible con scroll
+        chatContainer.className = 'flex flex-col p-4 h-full overflow-y-auto mb-24'; // Contenedor flexible con scroll
 
 
     } catch (error) {

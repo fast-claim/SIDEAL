@@ -1,18 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Documentos\\Programaci\u00F3n\\SIDEAL\\SIDEAL\\",
+  "WorkspaceRootPath": "D:\\SIDEAL\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7E5BC195-7253-477B-AA31-B2535BF5413A}|WebApplication1\\WebApplication1.csproj|d:\\documentos\\programaci\u00F3n\\sideal\\sideal\\webapplication1\\.env||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "AbsoluteMoniker": "D:0:0:{7E5BC195-7253-477B-AA31-B2535BF5413A}|WebApplication1\\WebApplication1.csproj|d:\\sideal\\webapplication1\\.env||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{7E5BC195-7253-477B-AA31-B2535BF5413A}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\.env||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E5BC195-7253-477B-AA31-B2535BF5413A}|WebApplication1\\WebApplication1.csproj|d:\\documentos\\programaci\u00F3n\\sideal\\sideal\\webapplication1\\controllers\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E5BC195-7253-477B-AA31-B2535BF5413A}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E5BC195-7253-477B-AA31-B2535BF5413A}|WebApplication1\\WebApplication1.csproj|d:\\documentos\\programaci\u00F3n\\sideal\\sideal\\webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E5BC195-7253-477B-AA31-B2535BF5413A}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,48 +14,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": ".env",
-              "DocumentMoniker": "D:\\Documentos\\Programaci\u00F3n\\SIDEAL\\SIDEAL\\WebApplication1\\.env",
+              "DocumentMoniker": "D:\\SIDEAL\\WebApplication1\\.env",
               "RelativeDocumentMoniker": "WebApplication1\\.env",
-              "ToolTip": "D:\\Documentos\\Programaci\u00F3n\\SIDEAL\\SIDEAL\\WebApplication1\\.env",
+              "ToolTip": "D:\\SIDEAL\\WebApplication1\\.env",
               "RelativeToolTip": "WebApplication1\\.env",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAATAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAC3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-10-17T19:31:22.727Z",
+              "WhenOpened": "2024-10-23T13:39:24.717Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Documentos\\Programaci\u00F3n\\SIDEAL\\SIDEAL\\WebApplication1\\Program.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Program.cs",
-              "ToolTip": "D:\\Documentos\\Programaci\u00F3n\\SIDEAL\\SIDEAL\\WebApplication1\\Program.cs",
-              "RelativeToolTip": "WebApplication1\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T20:57:22.396Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "home.cs",
-              "DocumentMoniker": "D:\\Documentos\\Programaci\u00F3n\\SIDEAL\\SIDEAL\\WebApplication1\\Controllers\\home.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\home.cs",
-              "ToolTip": "D:\\Documentos\\Programaci\u00F3n\\SIDEAL\\SIDEAL\\WebApplication1\\Controllers\\home.cs",
-              "RelativeToolTip": "WebApplication1\\Controllers\\home.cs",
-              "ViewState": "AQIAADAAAAAAAAAAAAAIwDYAAABzAwAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T03:52:53.347Z"
             }
           ]
         }
