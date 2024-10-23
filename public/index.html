@@ -95,42 +95,41 @@
 
           <!-- Sección de imágenes -->
           <div class="w-full lg:w-1/2 h-72 lg:h-96 bg-gradient-to-br from-cyanfc to-purplefc flex items-center justify-center relative overflow-hidden rounded-lg shadow-lg mx-4 lg:mx-20">
-              <!-- Imagen 1 -->
-              <div class="image opacity-100 absolute w-full h-full flex-shrink-0 flex flex-col items-center justify-center">
-                  <img src="img/AYA.jpg" alt="Articulo AyA" class="w-full h-full object-cover filter brightness-75 rounded-lg">
-                  <p class="absolute text-white text-lg lg:text-xl bottom-4">
-                    <a href="article.html" onclick="redirect(2)">
-                        Problemas que enfrenta el AyA
-                    </a>
-                  </p>
-              </div>
-              <!-- Imagen 2 -->
-              <div class="image opacity-0 absolute w-full h-full flex-shrink-0 flex flex-col items-center justify-center">
-                  <img src="img/cnflarticulo.jpg" alt="Articulo CNFL" class="w-full h-full object-cover filter brightness-75 rounded-lg">
-                  <p class="absolute text-white text-lg lg:text-xl bottom-4">
-                    <a href="article.html" onclick="redirect(4)">
-                        Problemas que enfrenta la CNFL
-                    </a>
-                </p>
-              </div>
-              <!-- Imagen 3 -->
-              <div class="image opacity-0 absolute w-full h-full flex-shrink-0 flex flex-col items-center justify-center">
-                
-                <img src="img/CCSSarticulo.jpg" alt="Articulo CCSS" class="w-full h-full object-cover filter brightness-75 rounded-lg">
-                <p class="absolute text-white text-lg lg:text-xl bottom-4">
-                    <a href="article.html" onclick="redirect(1)">
-                        Problemas que enfrenta la CCSS
-                    </a>
-                </p>
-              </div>
+            <!-- Imagen 1 -->
+            <div class="image opacity-100 absolute w-full h-full flex-shrink-0 flex flex-col items-center justify-center">
+              <img src="img/AYA.jpg" alt="Articulo AyA" class="w-full h-full object-cover filter brightness-75 rounded-lg">
+              <p class="absolute text-white text-lg lg:text-xl bottom-4">
+                <a href="article.html" onclick="redirect(2)">
+                  Problemas que enfrenta el AyA
+                </a>
+              </p>
+            </div>
+            <!-- Imagen 2 -->
+            <div class="image opacity-0 absolute w-full h-full flex-shrink-0 flex flex-col items-center justify-center">
+              <img src="img/cnflarticulo.jpg" alt="Articulo CNFL" class="w-full h-full object-cover filter brightness-75 rounded-lg">
+              <p class="absolute text-white text-lg lg:text-xl bottom-4">
+                <a href="article.html" onclick="redirect(4)">
+                  Problemas que enfrenta la CNFL
+                </a>
+              </p>
+            </div>
+            <!-- Imagen 3 -->
+            <div class="image opacity-0 absolute w-full h-full flex-shrink-0 flex flex-col items-center justify-center">
+              <img src="img/CCSSarticulo.jpg" alt="Articulo CCSS" class="w-full h-full object-cover filter brightness-75 rounded-lg">
+              <p class="absolute text-white text-lg lg:text-xl bottom-4">
+                <a href="article.html" onclick="redirect(1)">
+                  Problemas que enfrenta la CCSS
+                </a>
+              </p>
+            </div>
           
-              <!-- Flechas de navegación -->
-              <button id="prev" class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-70 text-black p-3 rounded-full hover:bg-opacity-90 transition z-20">
-                  &#8592;
-              </button>
-              <button id="next" class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-70 text-black p-3 rounded-full hover:bg-opacity-90 transition z-20">
-                  &#8594;
-              </button> 
+            <!-- Flechas de navegación -->
+            <button id="prev" class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-70 text-black p-3 rounded-full hover:bg-opacity-90 transition z-20">
+              &#8592;
+            </button>
+            <button id="next" class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-70 text-black p-3 rounded-full hover:bg-opacity-90 transition z-20">
+              &#8594;
+            </button> 
           </div>
       </div>
   </div>
@@ -276,7 +275,12 @@
           // Redirige a article.html
           window.location.href = 'article.html';
         }
-      </script>
+    </script>
+<style>
+  .image {
+    transition: opacity 1s ease-in-out;
+  }
+</style>
 </body>
 
 
