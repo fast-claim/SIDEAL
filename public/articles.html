@@ -80,17 +80,25 @@
 
   <!-- Contenido principal -->
   <main class="flex-grow p-20 max-w-full justify-center bg-white  flex items-center space-x-4">
-    <div class="flex items-center space-x-4">
-      <span class="bg-slate-500 text-slate-700">
-          <input type="text" name="" id="textoArticulo" placeholder="Busca algo..." style="width: 525px;" class="rounded-lg p-1 bg-gray-300 hover:bg-gray-400 text-gray-800 placeholder-gray-500 transition-colors duration-300 ease-in-out">
+    <div class="flex flex-wrap items-center space-x-0 md:space-x-4 mt-8">
+      <!-- Campo de búsqueda -->
+      <span class="bg-slate-500 text-slate-700 w-full md:w-auto mb-4 md:mb-0">
+        <input type="text" id="textoArticulo" placeholder="Busca algo..." 
+               class="w-full md:w-96 rounded-lg p-2 bg-gray-300 hover:bg-gray-400 text-gray-800 placeholder-gray-500 transition-colors duration-300 ease-in-out">
       </span>
-      <button id="buscarArticulo" class="bg-bluefc text-white hover:bg-blue-700 cursor-pointer w-14 h-8 rounded-lg flex justify-center items-center transition-colors duration-300 ease-in-out">
-          <img src="img/svg/lupa.svg" alt="" class="">
+    
+      <!-- Botón de búsqueda -->
+      <button id="buscarArticulo" 
+              class="bg-bluefc text-white hover:bg-blue-700 cursor-pointer w-full md:w-14 h-10 md:h-8 rounded-lg flex justify-center items-center transition-colors duration-300 ease-in-out">
+        <img src="img/svg/lupa.svg" alt="" class="w-5 h-5">
       </button>
-      <button id="mostrarTodo" class="bg-bluefc text-white hover:bg-blue-700 cursor-pointer w-24 h-8 rounded-lg flex justify-center items-center transition-colors duration-300 ease-in-out">
-          Mostrar Todo
+    
+      <!-- Botón de mostrar todo -->
+      <button id="mostrarTodo" 
+              class="bg-bluefc text-white hover:bg-blue-700 cursor-pointer w-full md:w-24 h-10 md:h-8 mt-2 md:mt-0 rounded-lg flex justify-center items-center transition-colors duration-300 ease-in-out">
+        Mostrar Todo
       </button>
-  </div>
+    </div>
   
   
   </main>
