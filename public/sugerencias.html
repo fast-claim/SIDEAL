@@ -4,8 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/svg/logoresponsive.svg">
-    <link rel="stylesheet" href="css/styles.css">
     <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "pozynHnLZM8H_bbBq",
+      });
+   })();
+</script>
+
 </head>
 <body>
     <header class="bg-bluefc fixed top-0 left-0 right-0 z-50 w-full">
@@ -78,82 +89,56 @@
       </header>
 
 
-
       <section class="bg-gray-200 py-8 mt-24">
         <div class="max-w-screen-lg mx-auto px-4 text-center">
-            <h2 class="text-4xl md:text-6xl font-bold mb-4">Documentos guía importantes</h2>
-            <p class="text-base md:text-lg text-gray-700">Aquí encontrarás unas guías muy útiles sobre los procesos para proceder con las denuncias ante las instituciones.</p>
+            <h2 class="text-2xl font-bold mb-4">Sugerencias</h2>
+            <p class="text-lg text-gray-700">En esta sección nos gustaria poder contar con tu ayuda y comentarios, rellena los datos del formulario y escribenos la sugerencia que tengas, esto nos ayudará a llevar a cabo nuestro objetivo de mejor manera.
         </div>
     </section>
-    
-    <main class="flex-grow pt-10 mt-1"> 
-        <div class="mx-auto w-full md:w-11/12 bg-gray-200 rounded-lg shadow-xl mt-3 p-4 md:p-8">
-            <h2 class="text-3xl md:text-5xl mb-4 text-center">Documentos importantes</h2>
-    
-            <!-- Primera tarjeta -->
-            <div class="flex flex-col md:flex-row items-center justify-between bg-gradient-to-r from-blue-900 to-purple-800 p-6 rounded-lg shadow-lg m-2">
-                <img class="w-full md:w-48 h-auto rounded-lg mb-4 md:mb-0 md:mr-6" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD3p6A2ANPQa9iM0JSHfOPXdjQsCHI_JNGFQ&s" alt="">
-                <div class="flex-1">
-                    <h3 class="text-2xl md:text-4xl mb-6 font-extralight text-white">Ministerio de Trabajo y Seguridad Social</h3>
-                    <p class="text-white mb-4">Las denuncias al MTSS se presentan cuando se sospecha 
-                        que un patrono no cumple con las leyes laborales, como 
-                        el pago del salario mínimo, o cuando se requiere la 
-                        regularización de una situación. Por ejemplo, si un trabajador 
-                        no ha recibido su salario correspondiente o si se está incumpliendo 
-                        con las condiciones de seguridad en un centro de trabajo, 
-                        puedes presentar una denuncia ante el Ministerio.
-                    </p>
-                    <p class="text-white mb-4">Acá tienes una guía pdf explicando esto más a fondo y con pasos para proceder.</p>
-                    <a href="../src/docs/proceso mtss.pdf" download="" class="inline-block bg-purple-600 text-white text-xl py-2 px-4 rounded-lg hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 transition text-center">Descargar Guía</a>
+
+
+    <!-- Sección de Formulario de Sugerencias -->
+    <section class="bg-gray-300 py-10">
+        <div class="max-w-screen-md mx-auto bg-gradient-to-br from-cyanfc to-purplefc rounded-lg shadow-lg p-8 ">
+            <h2 class="text-3xl font-bold text-white mb-6 text-center">Envíanos tu sugerencia</h2>
+            <form id="contact-form" class="space-y-6" action="https://formsubmit.co/fastclaim2024@gmail.com" method="POST">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 ">
+                    <div>
+                        <label for="nombre" class="block text-sm font-medium  text-white">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm p-3" placeholder="Ingresa tu nombre">
+                    </div>
+                    
+                    <div>
+                        <label for="apellido" class="block text-sm font-medium text-white">Apellido</label>
+                        <input type="text" id="apellido" name="apellido" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm p-3" placeholder="Ingresa tu apellido">
+                    </div>
+                    
+                    
                 </div>
-            </div>
-    
-            <!-- Segunda tarjeta -->
-            <div class="flex flex-col md:flex-row items-center justify-between bg-gradient-to-r from-blue-900 to-purple-800 p-6 rounded-lg shadow-lg m-2">
-                <div class="flex-1">
-                    <h3 class="text-2xl md:text-4xl mb-6 font-extralight text-white">Caja Costarricense del Seguro Social</h3>
-                    <p class="text-white mb-4">Lo adecuado es presentar denuncias ante la CCSS cuando se sospeche de posible fraude, mal uso de recursos, o conductas indebidas. 
-                        Por ejemplo, si tienes conocimiento de un proveedor que está facturando servicios que no ha brindado o de algún funcionario que esté recibiendo sobornos, eso debe ser denunciado.
-                    </p>
-                    <p class="text-white mb-4">Acá tienes una guía pdf explicando esto más a fondo y con pasos para proceder.</p>
-                    <a href="../src/docs/CCSS Procesos denuncias.docx" download="" class="inline-block bg-purple-600 text-white text-xl py-2 px-4 rounded-lg hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 transition text-center">Descargar Guía</a>
+                <div>
+                    <label for="correo" class="block text-sm font-medium text-white">Correo Electrónico</label>
+                    <input type="text" id="email" name="correo" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm p-3" placeholder="correo@ejemplo.com">
                 </div>
-                <img class="w-full md:w-48 h-auto rounded-lg mt-4 md:mt-0 md:ml-6" src="https://pbs.twimg.com/profile_images/1558273111933554690/xFSB9dy3_400x400.jpg" alt="">
-            </div>
-    
-            <!-- Tercera tarjeta -->
-            <div class="flex flex-col md:flex-row items-center justify-between bg-gradient-to-r from-blue-900 to-purple-800 p-6 rounded-lg shadow-lg m-2">
-                <img class="w-full md:w-48 h-auto rounded-lg mb-4 md:mb-0 md:mr-6" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzDjtuEE1tI__NrN86jWZwcRgdYcfmDdTfEw&s" alt="">
-                <div class="flex-1">
-                    <h3 class="text-2xl md:text-4xl mb-6 font-extralight text-white">Compañía Nacional de Fuerza y Luz</h3>
-                    <p class="text-white mb-4">Las denuncias a la CNFL deben presentarse cuando se sospeche de malas 
-                        prácticas, incumplimientos de normativas, o irregularidades en su funcionamiento. 
-                    </p>
-                    <p class="text-white mb-4">Acá tienes una guía pdf explicando esto más a fondo y con pasos para proceder.</p>
-                    <a href="../src/docs/proceso cnfl.pdf" download="" class="inline-block bg-purple-600 text-white text-xl py-2 px-4 rounded-lg hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 transition text-center">Descargar Guía</a>
+                
+                
+                <div>
+                    <label for="sugerencia" class="block text-sm font-medium text-white">Escribe tu sugerencia</label>
+                    <textarea id="sugerencia" name="sugerencia" required rows="4" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm p-3" placeholder="Escribe tu sugerencia aquí"></textarea>
                 </div>
-            </div>
-    
-            <!-- Cuarta tarjeta -->
-            <div class="flex flex-col md:flex-row items-center justify-between bg-gradient-to-r from-blue-900 to-purple-800 p-6 rounded-lg shadow-lg m-2">
-                <div class="flex-1">
-                    <h3 class="text-2xl md:text-4xl mb-6 font-extralight text-white">Acueductos y Alcantarillados</h3>
-                    <p class="text-white mb-4">Es importante presentar denuncias al AyA cuando existan infracciones a las normativas de prestación de 
-                        servicios o casos de corrupción. 
-                    </p>
-                    <p class="text-white mb-4">Acá tienes una guía pdf explicando esto más a fondo y con pasos para proceder.</p>
-                    <a href="../src/docs/AyA Procesos Denuncias(1).docx" download="" class="inline-block bg-purple-600 text-white text-xl py-2 px-4 rounded-lg hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 transition text-center">Descargar Guía</a>
+                <div class="flex justify-center">
+                    <input type="submit" onclick="sendMail()" class="px-6 py-3 bg-bluefc text-white font-bold rounded-md hover:bg-blue-700 transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-bluefc">
+                    </input>
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5501/public/index.html">
+                    <input type="hidden" name="_captcha" value="false">
+
                 </div>
-                <img class="w-full md:w-48 h-auto rounded-lg mt-4 md:mt-0 md:ml-6" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbbasxxvvsWbU5GHqGU6n2FA1NT6VuNrzNJA&s" alt="">
-            </div>
+            </form>
         </div>
-    </main>
+    </section>
+
+
+
     
-
-
-
-
-
     <section class="bg-bluefc">
         <div class="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
             <nav class="flex flex-wrap justify-center -mx-5 -my-2">
@@ -197,12 +182,10 @@
             </p>
         </div>
     </section>
-
-
-
-
-    
-    
-    
+    <script src="js/menu.js"></script>
+    <script src="js/script.js"></script>
 </body>
+
+
 </html>
+    
