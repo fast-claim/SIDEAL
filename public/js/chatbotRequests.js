@@ -11,6 +11,8 @@ async function fetchChatBotResponse() {
         }
 
         // Mensaje del usuario
+        let defaultMessage = document.getElementById('firstMessage');
+        defaultMessage.innerHTML = ''
         let userMessageDiv = document.createElement('div');
         userMessageDiv.className = 'bg-gray-300 text-base sm:text-lg max-w-xl w-auto mt-3 rounded-2xl p-4 text-right text-black self-end break-words shadow-md';
         userMessageDiv.innerHTML = chatBotText;
@@ -34,8 +36,7 @@ async function fetchChatBotResponse() {
         console.log(data.answer);
 
         // Respuesta del bot
-        let defaultMessage = document.getElementById('firstMessage');
-        defaultMessage.innerHTML = ''
+        
         let botResponseDiv = document.createElement('div');
         botResponseDiv.className = 'bg-blue-600 text-base sm:text-lg max-w-xl w-auto mt-3 rounded-2xl p-4 text-left text-white self-start break-words shadow-md'; // Alineado a la izquierda
         botResponseDiv.innerHTML = data.answer;
