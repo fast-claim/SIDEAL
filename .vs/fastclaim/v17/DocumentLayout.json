@@ -1,10 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\SIDEAL\\",
+  "WorkspaceRootPath": "C:\\Users\\yeric\\Desktop\\SIDEAL\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7E5BC195-7253-477B-AA31-B2535BF5413A}|WebApplication1\\WebApplication1.csproj|d:\\sideal\\webapplication1\\.env||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "AbsoluteMoniker": "D:0:0:{7E5BC195-7253-477B-AA31-B2535BF5413A}|WebApplication1\\WebApplication1.csproj|c:\\users\\yeric\\desktop\\sideal\\webapplication1\\.env||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{7E5BC195-7253-477B-AA31-B2535BF5413A}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\.env||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E5BC195-7253-477B-AA31-B2535BF5413A}|WebApplication1\\WebApplication1.csproj|c:\\users\\yeric\\desktop\\sideal\\webapplication1\\controllers\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E5BC195-7253-477B-AA31-B2535BF5413A}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "home.cs",
+              "DocumentMoniker": "C:\\Users\\yeric\\Desktop\\SIDEAL\\WebApplication1\\Controllers\\home.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\home.cs",
+              "ToolTip": "C:\\Users\\yeric\\Desktop\\SIDEAL\\WebApplication1\\Controllers\\home.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\home.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAgwDoAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T21:00:25.93Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": ".env",
-              "DocumentMoniker": "D:\\SIDEAL\\WebApplication1\\.env",
+              "DocumentMoniker": "C:\\Users\\yeric\\Desktop\\SIDEAL\\WebApplication1\\.env",
               "RelativeDocumentMoniker": "WebApplication1\\.env",
-              "ToolTip": "D:\\SIDEAL\\WebApplication1\\.env",
+              "ToolTip": "C:\\Users\\yeric\\Desktop\\SIDEAL\\WebApplication1\\.env",
               "RelativeToolTip": "WebApplication1\\.env",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAC3AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-10-23T13:39:24.717Z",
+              "WhenOpened": "2024-10-30T15:03:06.534Z",
               "EditorCaption": ""
             }
           ]

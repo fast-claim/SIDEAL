@@ -34,9 +34,12 @@ async function fetchChatBotResponse() {
         console.log(data.answer);
 
         // Respuesta del bot
+        let defaultMessage = document.getElementById('firstMessage');
+        defaultMessage.innerHTML = ''
         let botResponseDiv = document.createElement('div');
         botResponseDiv.className = 'bg-blue-600 text-base sm:text-lg max-w-xl w-auto mt-3 rounded-2xl p-4 text-left text-white self-start break-words shadow-md'; // Alineado a la izquierda
         botResponseDiv.innerHTML = data.answer;
+        
         chatContainer.appendChild(botResponseDiv);
 
         // Hacer scroll al final del contenedor para mostrar el último mensaje
