@@ -14,64 +14,60 @@
         <nav class="h-20 flex justify-between items-center w-[92%] mx-auto relative">
           
           <!-- Logo para pantallas grandes -->
-          <div>
+          <div class="hidden lg:flex">
             <a href="index.html">
-              <img src="img/svg/logo.svg" alt="Logo" class="hidden h-16 w-40 ml-10 cursor-pointer lg:flex">
+              <img src="img/svg/logo.svg" alt="Logo" class="h-16 w-40 ml-6 cursor-pointer">
             </a>
           </div>
           
           <!-- Logo para pantallas pequeñas -->
-          <div>
+          <div class="lg:hidden flex items-center">
             <a href="index.html">
-              <img src="img/svg/logoresponsive.svg" alt="Logo" class="flex h-16 w-16 cursor-pointer lg:hidden mr-96">
+              <img src="img/svg/logoresponsive.svg" alt="Logo" class="h-16 w-16 cursor-pointer">
             </a>
           </div>
           
-          <!-- Espaciador para alinear elementos -->
-          <div class="flex lg:hidden w-20">
-          </div>
-          
           <!-- Icono del menú hamburguesa visible en pantallas pequeñas -->
-          <div class="lg:hidden">
+          <div class="lg:hidden flex items-center">
             <button id="menu-button" class="text-white focus:outline-none">
               <svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" viewBox="0 0 24 24">
                 <path fill="currentColor" d="M3 18v-2h18v2zm0-5v-2h18v2zm0-5V6h18v2z"/>
               </svg>
             </button>
           </div>
-    
+          
           <!-- Menú de navegación para pantallas grandes -->
-          <div class="hidden lg:block">
-            <ul class="flex items-center gap-9">
-              <li><a class="text-white text-lg hover:text-gray-500 h-20 flex items-center" href="chatbot.html">ChatBot</a></li>
-              <li><a class="text-white text-lg hover:text-gray-500 h-20 flex items-center" href="formularios.html">Formularios</a></li>
-              <li><a class="text-white text-lg hover:text-gray-500 h-20 flex items-center" href="articles.html">Artículos</a></li>
-              <li><a class="text-white text-lg hover:text-gray-500 h-20 flex items-center" href="documentos.html">Documentos</a></li>
-              <li><a class="text-white text-lg hover:text-gray-500 h-20 flex items-center" href="contactos.html">Contactos</a></li>
-              <li><a class="text-white text-lg hover:text-gray-500 h-20 mr-4 md:mr-20 flex items-center" href="sugerencias.html">Sugerencias</a></li>
+          <div class="hidden lg:flex flex-1 justify-end">
+            <ul class="flex items-center gap-6">
+              <li><a class="text-white text-lg hover:text-gray-500" href="chatbot.html">ChatBot</a></li>
+              <li><a class="text-white text-lg hover:text-gray-500" href="formularios.html">Formularios</a></li>
+              <li><a class="text-white text-lg hover:text-gray-500" href="articles.html">Artículos</a></li>
+              <li><a class="text-white text-lg hover:text-gray-500" href="documentos.html">Documentos</a></li>
+              <li><a class="text-white text-lg hover:text-gray-500" href="contactos.html">Contactos</a></li>
+              <li><a class="text-white text-lg hover:text-gray-500 mr-4" href="sugerencias.html">Sugerencias</a></li>
             </ul>
           </div>
-    
+          
           <!-- Menú desplegable en móviles (inicialmente oculto) -->
-          <div id="mobile-menu" class="lg:hidden hidden absolute top-full right-0 bg-bluefc z-60 w-72">
+          <div id="mobile-menu" class="lg:hidden hidden absolute top-full right-0 bg-bluefc w-96 shadow-md">
             <ul class="flex flex-col items-center text-center">
-              <li class="border-b border-white w-full text-center py-2">
-                <a class="text-white text-lg hover:text-gray-500 block w-full" href="chatbot.html">ChatBot</a>
+              <li class="border-b border-white w-full">
+                <a class="text-white text-lg hover:text-gray-500 py-4 block" href="chatbot.html">ChatBot</a>
               </li>
-              <li class="border-b border-white w-full text-center py-2">
-                <a class="text-white text-lg hover:text-gray-500 block w-full" href="formularios.html">Formularios</a>
+              <li class="border-b border-white w-full">
+                <a class="text-white text-lg hover:text-gray-500 py-4 block" href="formularios.html">Formularios</a>
               </li>
-              <li class="border-b border-white w-full text-center py-2">
-                <a class="text-white text-lg hover:text-gray-500 block w-full" href="articles.html">Artículos</a>
+              <li class="border-b border-white w-full">
+                <a class="text-white text-lg hover:text-gray-500 py-4 block" href="articles.html">Artículos</a>
               </li>
-              <li class="border-b border-white w-full text-center py-2">
-                <a class="text-white text-lg hover:text-gray-500 block w-full" href="documentos.html">Documentos</a>
+              <li class="border-b border-white w-full">
+                <a class="text-white text-lg hover:text-gray-500 py-4 block" href="documentos.html">Documentos</a>
               </li>
-              <li class="border-b border-white w-full text-center py-2">
-                <a class="text-white text-lg hover:text-gray-500 block w-full" href="contactos.html">Contactos</a>
+              <li class="border-b border-white w-full">
+                <a class="text-white text-lg hover:text-gray-500 py-4 block" href="contactos.html">Contactos</a>
               </li>
-              <li class="w-full text-center py-2">
-                <a class="text-white text-lg hover:text-gray-500 block w-full" href="sugerencias.html">Sugerencias</a>
+              <li class="w-full">
+                <a class="text-white text-lg hover:text-gray-500 py-4 block" href="sugerencias.html">Sugerencias</a>
               </li>
             </ul>
           </div>
